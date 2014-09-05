@@ -1,0 +1,669 @@
+/* Codigo generado para los fonts e iconos */
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-hj6w0t');
+    src:url('../fonts/icomoon.eot?#iefix-hj6w0t') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-hj6w0t') format('woff'),
+        url('../fonts/icomoon.ttf?-hj6w0t') format('truetype'),
+        url('../fonts/icomoon.svg?-hj6w0t#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE602:before {
+    content: "\e602";
+}
+.icon-uniE600:before {
+    content: "\e600";
+}
+.icon-uniE601:before {
+    content: "\e601";
+}
+
+@font-face {
+    font-family: 'verlagblack';
+    src: url('../fonts/verlag-black-webfont.eot');
+    src: url('../fonts/verlag-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/verlag-black-webfont.woff') format('woff'),
+         url('../fonts/verlag-black-webfont.ttf') format('truetype'),
+         url('../fonts/verlag-black-webfont.svg#verlagblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'verlagbold';
+    src: url('../fonts/verlag-bold-webfont.eot');
+    src: url('../fonts/verlag-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/verlag-bold-webfont.woff') format('woff'),
+         url('../fonts/verlag-bold-webfont.ttf') format('truetype'),
+         url('../fonts/verlag-bold-webfont.svg#verlagbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'verlagbook';
+    src: url('../fonts/verlag-book-webfont.eot');
+    src: url('../fonts/verlag-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/verlag-book-webfont.woff') format('woff'),
+         url('../fonts/verlag-book-webfont.ttf') format('truetype'),
+         url('../fonts/verlag-book-webfont.svg#verlagbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* diseño de la pagina */
+*
+{  
+    margin: 0;
+}
+a
+{
+    color: #f0f0f0;
+    text-decoration: none;
+}
+figure
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+}
+body
+{
+    background: white;
+    font-family: 'verlagbook';
+    font-size: 16px;
+    color: #444444;
+    min-width: 640px;
+}
+header .menu-header
+{
+    background: black;
+    color: #f0f0f0;
+    
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+    overflow: hidden;
+}
+header .menu-header .menu-botones .boton-pp1
+{
+    font-family: 'verlagbold';
+    font-size: 1.2em;
+    position: absolute;
+    top: .6em;
+    left: 30px;
+}
+header .menu-header .menu-botones li
+{
+    display: inline-block;
+    padding: 0 2em 0 0;
+    float: right;
+}
+header .menu-header .menu-botones .boton-derecha
+{
+    padding: 0;
+}
+h1
+{
+    color: black;
+    font-family: 'verlagblack';
+    font-size: 2.2em;
+    text-align: center;
+}
+h2
+{
+    color: white;
+    font-family: 'verlagblack';
+    font-size: 2.2em;
+    text-align: center;
+}
+/* ------------------------------------------------------- */
+#intro
+{
+    background: url(../img/FONDO_1280.jpg);
+    background-size: 100% 550px;
+    color: #f0f0f0;
+    height: 550px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-color: #201f1b;
+}
+#intro .cuadro-pp1
+{
+    font-family: 'verlagbold';
+    font-size: 1.4em;
+
+    width: 136px;
+    height: 165px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f0f0f0;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 5px;
+    position: relative;
+
+    
+}
+#intro .cuadro-pp1 .logo-pp1-item, .texto-pp1-item
+{
+    width: 68px;
+    height: 45px;
+    margin: 0 0 0 0;
+    padding: 10px 0 0 0;
+    float: left;
+}
+#intro .cuadro-pp1 .logo-pp1-item
+{
+    text-align: center;
+}
+#intro .cuadro-pp1 .logo-pp1-item .logo-verde
+{
+    margin: 0;
+    padding: 0;
+}
+#intro .cuadro-pp1 .logo-pp1-item .logo-verde .img-logo-verde
+{
+    width: 36px;
+    height: auto;
+}
+#intro .innovation-lab-text
+{
+    font-family: 'verlagbold';
+    position: relative;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+#intro .innovation-text, .lab-text
+{
+    display: inline-block;
+
+}
+#intro .lab-text
+{
+    padding: 0 0 0 .5em;
+    color: #0ad1be;
+}
+
+#intro .intro-copy .texto 
+{
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+}
+#intro .intro-copy .seguir-box
+{
+    width: 172px;
+    height: 36px;
+    border: 3px solid #f0f0f0;
+    text-align: center;
+    padding-top: 12px;
+    margin: 50px auto 50px auto;
+}
+/* ------------------------------------------------------- */
+
+#logo
+{
+    background: #f0f0f0;
+    height: 400px;
+    color: #444444;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+#logo .logo-box
+{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+/* ------------------------------------------------------- */
+
+#quienes-somos
+{
+    background: #0ad1be;
+    height: 400px;
+    color: #f0f0f0;
+}
+#quienes-somos .intro-copy
+{
+    padding-top: 100px;
+}
+#quienes-somos .intro-copy .texto 
+{
+
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+}
+#quienes-somos .intro-copy .seguir-box
+{
+    width: 172px;
+    height: 36px;
+    border: 3px solid #f0f0f0;
+    text-align: center;
+    padding-top: 12px;
+    margin: 50px auto 50px auto;
+}
+/* ------------------------------------------------------- */
+
+#servicios-fix
+{
+    height: 620px;
+    background: white;
+}
+#servicios-fix .servicios-container
+{
+    margin-left: 5%; 
+    margin-right: 5%;
+
+}
+#servicios-fix .servicios-container .servicios-container-boxes
+{
+     background: gray;
+
+}
+
+#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item
+{
+    margin: 20px;
+    width: 214px;
+    float: left;
+}
+#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .icono-item
+{
+    text-align: center;
+}
+#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .icono-item figure 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .icono-item .imagen-item
+{
+    width: 134px;
+    height: 134px;
+    padding: 40px;
+    vertical-align: top;
+}
+#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .titulo-item
+{
+    background: #0ad1be;
+    color: white;
+    font-size: 1.3em;
+    height: 2em;
+    text-align: center;
+    padding-top: .8em;
+}
+#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
+{
+    background: black;
+    height: 130px;
+    text-align: center;
+    padding: 5%;
+}
+#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .texto-item .parrafo
+{
+    color: white;
+    font-family: 'verlagbook';
+ }
+
+#servicios
+{
+    height: 620px;
+    background: white;
+    clear: both;
+}
+#servicios .servicios-container
+{
+   
+    margin-left: 5%; 
+    margin-right: 5%;
+}
+#servicios .servicios-container .servicios-container-boxes
+{
+     background: yellow;
+    
+    display: box;
+    box-orient: horizontal;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+}
+#servicios .servicios-container .servicios-container-boxes > div
+{
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item
+{
+    margin: 20px;
+    width: 214px;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item
+{
+    text-align: center;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item figure 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item .imagen-item
+{
+    width: 134px;
+    height: 134px;
+    padding: 40px;
+    vertical-align: top;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .titulo-item
+{
+    background: #0ad1be;
+    color: white;
+    font-size: 1.3em;
+    height: 2em;
+    text-align: center;
+    padding-top: .8em;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
+{
+    background: black;
+    height: 130px;
+    text-align: center;
+    padding: 5%;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item .parrafo
+{
+    color: white;
+    font-family: 'verlagbook';
+ }
+ /* ------------------------------------------------------- */
+
+#makers
+{
+    clear: both;
+    height: 400px;
+    background: white;
+    background: url(../img/MAKERS_1280.jpg);
+    background-size: 100% 428px;
+    height: 428px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+/* ------------------------------------------------------- */
+
+#innovation-lab 
+{
+    padding: 100px;
+    height: 300px;
+    background: #222222;
+    color: white;
+
+}
+#innovation-lab .intro-copy .iconos
+{
+    width: 210px;
+    margin: 0 auto; /* Centrado */
+}
+#innovation-lab .intro-copy .iconos .icono-fig-item
+{
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    float: left;
+}
+#innovation-lab .intro-copy .iconos .icono-fig-item .icono-img-item
+{
+    width: 50px;
+    height: 50px;
+}
+
+#innovation-lab .intro-copy .texto 
+{
+    clear: both;
+    margin-top: 15px;
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+/* ------------------------------------------------------- */
+
+#conoce-mas
+{
+    height: 400px;
+    background: white;
+}
+#conoce-mas .temas-container
+{
+    padding: 20px;
+
+    display: box;
+    box-orient: horizontal;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+}
+#conoce-mas .temas-container > div
+{
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+
+}
+#conoce-mas .temas-container .tema-item
+{
+    background: gray;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+/* ------------------------------------------------------- */
+
+#nuestro-equipo
+{
+    background: #0ad1be;
+    height: 600px;
+}
+#nuestro-equipo .titulo
+{
+    padding-top: 30px;
+}
+/* ------------CAJAS FLEXIBLES------------------
+#nuestro-equipo .equipo-container
+{
+    border: 10px solid blue;
+    margin: 5px;
+
+    display: box;
+    box-orient: horizontal;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+}
+#nuestro-equipo .equipo-container > div
+{
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+
+}
+#nuestro-equipo .equipo-container .persona-item
+{
+    background: gray;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+ */
+ #nuestro-equipo .equipo-container
+{
+    padding: 20px;
+    color: white;
+
+    display: box;
+    box-orient: horizontal;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+}
+#nuestro-equipo .equipo-container > div
+{
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+
+}
+#nuestro-equipo .equipo-container .persona-item
+{
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+}
+#nuestro-equipo .equipo-container .persona-item .persona-foto-item .img-item
+{
+    width: 180px;
+    height: 180px;
+}
+#nuestro-equipo .equipo-container .persona-item .persona-puesto-item
+{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#nuestro-equipo .equipo-container .persona-item .persona-desc-item
+{
+    max-width: 300px;
+    margin: 0 auto;
+}
+/* ------------------------------------------------------- */
+
+#contacto
+{
+    height: 400px;
+    background: white;
+    background: url(../img/CONTACTO_1280.jpg);
+    background-size: 100% 428px;
+    height: 428px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+#contacto .contacto-container
+{
+    margin: 0;
+    padding: 0;
+}
+#contacto .contacto-container .contacto-icono-box
+{
+    padding-top: 80px;
+}
+#contacto .contacto-container .contacto-icono-box .icon-uniE600
+{
+    font-size: 12.5em;
+    color: white;
+}
+#contacto .contacto-container .contacto-box
+{
+
+    width: 172px;
+    height: 36px;
+    border: 3px solid #f0f0f0;
+    padding-top: 12px;
+    margin: 0 auto;
+}
+/* ------------------------------------------------------- */
+
+@media screen and (min-width: 640px){
+    #intro .intro-copy .texto 
+    {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+    }
+    #servicios-fix .servicios-container .de4
+    {
+        display: block;
+    }
+
+}
+@media screen and (min-width: 800px){
+    #intro .intro-copy .texto 
+    {
+        font-size: 1.3em;
+    }
+     #quienes-somos .intro-copy .texto 
+    {
+        font-size: 1.3em;
+    }
+    #innovation-lab .intro-copy .texto 
+    {
+        font-size: 1.3em;
+    }
+    h1, h2
+    {
+        font-size: 3.2em;
+    }
+}
+@media screen and (min-width: 1024px){
+    #logo .logo-box .logo-figure .logo-img
+    {
+        width: 550px; 
+        height: auto;
+    }
+    #logo .logo-box
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    } 

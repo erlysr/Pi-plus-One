@@ -279,73 +279,11 @@ h2
     padding-top: 12px;
     margin: 50px auto 50px auto;
 }
+
 /* ------------------------------------------------------- */
-
-#servicios-fix
-{
-    height: 620px;
-    background: white;
-}
-#servicios-fix .servicios-container
-{
-    margin-left: 5%; 
-    margin-right: 5%;
-
-}
-#servicios-fix .servicios-container .servicios-container-boxes
-{
-     background: gray;
-
-}
-
-#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item
-{
-    margin: 20px;
-    width: 214px;
-    float: left;
-}
-#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .icono-item
-{
-    text-align: center;
-}
-#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .icono-item figure 
-{
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .icono-item .imagen-item
-{
-    width: 134px;
-    height: 134px;
-    padding: 40px;
-    vertical-align: top;
-}
-#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .titulo-item
-{
-    background: #0ad1be;
-    color: white;
-    font-size: 1.3em;
-    height: 2em;
-    text-align: center;
-    padding-top: .8em;
-}
-#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
-{
-    background: black;
-    height: 130px;
-    text-align: center;
-    padding: 5%;
-}
-#servicios-fix .servicios-container .servicios-container-boxes .servicio-box-item .texto-item .parrafo
-{
-    color: white;
-    font-family: 'verlagbook';
- }
-
 #servicios
 {
-    height: 620px;
+    overflow: hidden;
     background: white;
     clear: both;
 }
@@ -357,7 +295,6 @@ h2
 }
 #servicios .servicios-container .servicios-container-boxes
 {
-     background: yellow;
     
     display: box;
     box-orient: horizontal;
@@ -420,6 +357,81 @@ h2
  }
  /* ------------------------------------------------------- */
 
+#servicios4
+{
+    overflow: hidden;
+    background: white;
+    clear: both;
+    display: none;
+}
+#servicios4 .servicios-container
+{
+   
+    margin-left: 5%; 
+    margin-right: 5%;
+}
+#servicios4 .servicios-container .servicios-container-boxes
+{   
+    display: box;
+    box-orient: horizontal;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+}
+#servicios4 .servicios-container .servicios-container-boxes > div
+{
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+
+}
+#servicios4 .servicios-container .servicios-container-boxes .servicio-box-item
+{
+    margin: 20px;
+    width: 214px;
+}
+#servicios4 .servicios-container .servicios-container-boxes .servicio-box-item .icono-item
+{
+    text-align: center;
+}
+#servicios4 .servicios-container .servicios-container-boxes .servicio-box-item .icono-item figure 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#servicios4 .servicios-container .servicios-container-boxes .servicio-box-item .icono-item .imagen-item
+{
+    width: 134px;
+    height: 134px;
+    padding: 40px;
+    vertical-align: top;
+}
+#servicios4 .servicios-container .servicios-container-boxes .servicio-box-item .titulo-item
+{
+    background: #0ad1be;
+    color: white;
+    font-size: 1.3em;
+    height: 2em;
+    text-align: center;
+    padding-top: .8em;
+}
+#servicios4 .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
+{
+    background: black;
+    height: 130px;
+    text-align: center;
+    padding: 5%;
+}
+#servicios4 .servicios-container .servicios-container-boxes .servicio-box-item .texto-item .parrafo
+{
+    color: white;
+    font-family: 'verlagbook';
+ }
+ /* ------------------------------------------------------- */
 #makers
 {
     clear: both;
@@ -667,3 +679,11 @@ h2
         padding-bottom: 20px;
 
     } 
+    #servicios
+    {
+        display: none;
+    }
+    #servicios4
+    {
+        display: block;
+    }

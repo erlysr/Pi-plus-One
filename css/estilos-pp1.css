@@ -138,6 +138,7 @@ h1
     font-family: 'verlagblack';
     font-size: 2.2em;
     text-align: center;
+    margin-bottom: .3em;
 }
 h2
 {
@@ -484,11 +485,12 @@ h2
 
 #conoce-mas
 {
-    height: 400px;
+    height: 700px;
     background: white;
 }
-#conoce-mas .temas-container
+#conoce-mas .conoce-mas-container
 {
+    overflow: hidden;
     padding: 20px;
 
     display: box;
@@ -500,19 +502,56 @@ h2
     display: -moz-box;
     -moz-box-orient: horizontal;
 }
-#conoce-mas .temas-container > div
+#conoce-mas .conoce-mas-container > div
 {
     box-flex: 1;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
-
 }
-#conoce-mas .temas-container .tema-item
+#conoce-mas .conoce-mas-container .temas-container .tema-item
 {
-    background: gray;
     text-align: center;
-    padding: 20px;
+    position: relative;
     margin: 10px;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item
+{
+    margin: 0 auto;     
+    position: relative;
+
+    width: 220px;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item figure
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-titulo
+{
+    width: 220px;
+    margin: 0 auto;
+    font-family: 'verlagbold';
+    color: white;
+    font-size: 1.8em;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-circulo-img-item
+{
+    border-radius: 50%;
+    width: 220px;
+    -webkit-transition: .5s;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-circulo-img-item:hover
+{
+    -webkit-transform: rotate(360deg);
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-desc-item
+{
+    padding-top: 20px;
+    
 }
 /* ------------------------------------------------------- */
 
@@ -666,6 +705,67 @@ h2
     {
         font-size: 3.2em;
     }
+    #conoce-mas
+    {
+        height: 430px;
+    }
+    #conoce-mas .conoce-mas-container
+    {
+        margin: 0 auto;
+
+    }
+    #conoce-mas .conoce-mas-container .temas-container
+    {
+       
+        padding: 0;
+                
+        display: box;
+        box-orient: horizontal;
+
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+
+        display: -moz-box;
+        -moz-box-orient: horizontal;
+    }
+
+    #conoce-mas .conoce-mas-container .temas-container .tema-item
+    {
+        margin: 0;
+       
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-item > div
+    {
+        box-flex: 1;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;          
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item
+    {
+     margin: 0;
+     width: 200px;
+     margin: 0 auto;
+    }
+
+    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-circulo-img-item
+    {
+        width: 180px;
+        margin: 0;
+        padding: 10;
+    }   
+    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-titulo
+    {
+        width: 170px;
+        font-size: 1.4em;
+        top: 60px;
+        left: 15px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-desc-item
+    {
+        width: 200px;
+        margin: 0 auto;
+    }
+
 }
 @media screen and (min-width: 1024px){
     #logo .logo-box .logo-figure .logo-img
@@ -686,4 +786,39 @@ h2
     #servicios4
     {
         display: block;
+    }
+    #conoce-mas
+    {
+        height: 520px;
+    }
+    #conoce-mas .conoce-mas-container
+    {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item
+    {
+     margin: 0;
+     width: 230px;
+     margin: 0 auto;
+     padding: 10px;
+    }
+
+    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-circulo-img-item
+    {
+        width: 210px;
+        margin: 0;
+        padding: 10px;
+    }   
+    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-titulo
+    {
+        width: 200px;
+        font-size: 1.6em;
+        top: 85px;
+        left: 25px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-desc-item
+    {
+        width: 230px;
     }

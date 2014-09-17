@@ -104,7 +104,7 @@ body
     color: #444444;
     min-width: 640px;
 }
-header .menu-header
+#menu-header
 {
     background: black;
     color: #f0f0f0;
@@ -114,7 +114,7 @@ header .menu-header
     position: relative;
     overflow: hidden;
 }
-header .menu-header .menu-botones .boton-pp1
+#menu-botones .boton-pp1
 {
     font-family: 'verlagbold';
     font-size: 1.2em;
@@ -122,15 +122,24 @@ header .menu-header .menu-botones .boton-pp1
     top: .6em;
     left: 30px;
 }
-header .menu-header .menu-botones li
+#menu-botones li
 {
     display: inline-block;
     padding: 0 2em 0 0;
     float: right;
 }
-header .menu-header .menu-botones .boton-derecha
+#menu-botones .boton-derecha
 {
     padding: 0;
+}
+.menu-fijo {
+    position: fixed;
+    top: 0;
+    padding: 1em;
+    left: 0;
+    z-index: 1;
+    background: black;
+    width: 620px;
 }
 h1
 {
@@ -147,6 +156,8 @@ h2
     font-size: 2.2em;
     text-align: center;
 }
+
+
 /* ------------------------------------------------------- */
 #intro
 {
@@ -676,6 +687,9 @@ h2
 /* ------------------------------------------------------- */
 
 @media screen and (min-width: 640px){
+    .menu-fijo {
+        width: 97%;
+    }
     #intro .intro-copy .texto 
     {
         margin-left: 20%;
@@ -770,7 +784,7 @@ h2
 @media screen and (min-width: 1024px){
     #logo .logo-box .logo-figure .logo-img
     {
-        width: 550px; 
+        
         height: auto;
     }
     #logo .logo-box

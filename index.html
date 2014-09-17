@@ -7,16 +7,80 @@
 	<title>Pi+One - Innovation Lab.</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos-pp1.css">
+	<script type="text/javascript" src="css/jquery.js"></script>
+	<script type="text/javascript">
+	
+	function cambiarservicios() {
+    	var elemento = document.querySelector('.boton-servicios');
+  
+	 	if($(window).width() > 640)
+	 	{
+	 		elemento.href = '#servicios4';
+	 	}
+	 	else
+	 	{
+	 		elemento.href = '#servicios';
+	 	}
+	 }
+	 </script>
+	  <script type="text/javascript">
+	  $(document).ready(function() {
+		  var menu = $('#menu-botones');
+		  var contenedor = $('#menu-header');
+		  var cont_offset = contenedor.offset();
+		  // Cada vez que se haga scroll en la página
+		  // haremos un chequeo del estado del menú
+		  // y lo vamos a alternar entre 'fixed' y 'static'.
+
+		  $(window).on('scroll', function() {
+		  	 //alert($(window).scrollTop());
+		    if($(window).scrollTop() > cont_offset.top) {
+		      menu.addClass('menu-fijo');
+		    } else {
+		      menu.removeClass('menu-fijo');
+		    }
+		  });
+		});
+	  </script>
+	  <script type="text/javascript">
+	  $(function(){
+
+     	$('a[href*=#]').click(function() {
+
+     		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         		&& location.hostname == this.hostname) {
+
+             		var $target = $(this.hash);
+
+             		$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+             		if ($target.length) {
+
+                 		var targetOffset = $target.offset().top;
+
+                 		$('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                 		return false;
+
+            		}
+
+       			}
+
+   		});
+
+	  });
+	  </script>
+
 </head>
 <body>
 	<header>
-		<nav class="menu-header">
-			<ul class="menu-botones">
-				<li class="boton-pp1"><a href="#">PI.PLUS.ONE</a></li>
-				<li class="boton-derecha"><a href="#">CONTACTO</a></li>
-				<li><a href="#">SERVICIOS</a></li>
-				<li><a href="#">¿QUIENES SOMOS?</a></li>
-				<li><a href="#">HOME</a></li>
+		<nav id="menu-header">
+			<ul id="menu-botones">
+				<li class="boton-pp1"><a href="http://www.pp1.mx">PI.PLUS.ONE</a></li>
+				<li class="boton-derecha"><a href="#contacto">CONTACTO</a></li>
+				<li><a class="boton-servicios" href="javascript: cambiarservicios();">SERVICIOS</a></li>
+				<li><a href="#quienes-somos">¿QUIENES SOMOS?</a></li>
+				<li><a href="#intro">HOME</a></li>
 			</ul>
 		
 		</nav>
@@ -370,10 +434,10 @@
 	<section id="contacto">
 		<div class="contacto-container">
 			<div class="contacto-icono-box">
-				<a href="#" class="icon-uniE600"></a>
+				<a class="icon-uniE600" href="mailto:contacto@pp1.mx?Subject=Contacto PiPlusOne%20again" target="_top"></a>
 			</div>
 			<div class="contacto-box">
-					<a href="#">CONTACTO</a>
+					<a href="mailto:contacto@pp1.mx?Subject=Contacto PiPlusOne%20again" target="_top">CONTACTO</a>
 			</div>
 		</div>
 	</section>

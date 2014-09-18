@@ -23,7 +23,8 @@
 	 	}
 	 }
 	 </script>
-	  <script type="text/javascript">
+	 
+	 <script type="text/javascript">
 	  $(document).ready(function() {
 		  var menu = $('#menu-botones');
 		  var contenedor = $('#menu-header');
@@ -69,20 +70,53 @@
    		});
 
 	  });
-	  </script>
+	  </script> 
 
 </head>
 <body>
 	<header>
 		<nav id="menu-header">
 			<ul id="menu-botones">
-				<li class="boton-pp1"><a href="http://www.pp1.mx">PI.PLUS.ONE</a></li>
-				<li class="boton-derecha"><a href="#contacto">CONTACTO</a></li>
-				<li><a class="boton-servicios" href="javascript: cambiarservicios();">SERVICIOS</a></li>
-				<li><a href="#quienes-somos">¿QUIENES SOMOS?</a></li>
-				<li><a href="#intro">HOME</a></li>
+				<li class="boton-pp1">
+					<a href="http://www.pp1.mx">PI.PLUS.ONE</a>
+				</li>
+				<li class="boton-derecha">
+					<a class="contacto-link" href="#contacto">CONTACTO</a>
+				</li>
+				<li>
+					<a class="boton-servicios" href="javascript: cambiarservicios();">SERVICIOS</a>
+				</li>
+				<li>
+					<a href="#quienes-somos">¿QUIENES SOMOS?</a>
+				</li>
+				<li>
+					<a href="#intro">HOME</a>
+				</li>
 			</ul>
-		
+		</nav>
+		<nav id="menu-header-smart">
+			<ul id="menu-botones-smart">
+				<li class="boton-lista">
+					<a class="icon-list" href="#"></a>
+					<ul class="submenu">
+						<li class="boton-pp1">
+							<a href="http://www.pp1.mx">PI.PLUS.ONE</a>
+						</li>
+						<li class="boton-derecha">
+							<a href="#contacto">CONTACTO</a>
+						</li>
+						<li>
+							<a class="boton-servicios" href="javascript: cambiarservicios();">SERVICIOS</a>
+						</li>
+						<li>
+							<a href="#quienes-somos">¿QUIENES SOMOS?</a>
+						</li>
+						<li>
+							<a href="#intro">HOME</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</nav>
 	</header>
 <!-- *********************************************************** -->
@@ -118,7 +152,8 @@
 			<p class="lab-text">LAB.</p>
 		</div>
 		<div class="intro-copy">
-			<p class="texto">TRATAMOS DE ENTENDER AL MUNDO, DE INFORMARNOS INTELIGENTEMENTE Y DE GENERAR EMPATÍA CON EL ENTORNO PARA CREAR SOLUCIONES A PROBLEMAS SOCIALES A PARTIR DE LA TECNOLOGÍA, LA INOVACIÓN Y LA CREATIVIDAD.</p>
+			<p class="texto">SOLUCIONES A PROBLEMAS SOCIALES A PARTIR DE LA TECNOLOGÍA,</p>
+			<p class="texto">LA INNOVACIÓN Y LA CREATIVIDAD.</p>
 			<div class="seguir-box">
 				<a href="#">SEGUIR LEYENDO</a>
 			</div>
@@ -137,7 +172,8 @@
 
 	<section id="quienes-somos">
 		<div class="intro-copy">
-			<p class="texto">EN PI PLUS ONE // LABORATORIO DE INNOVACIÓN NOS ENFOCAMOS EN DESARROLLAR PROYECTOS RELEVANTES PARA LA SOCIEDAD.</p>
+			<p class="texto">EN PI PLUS ONE // LABORATORIO DE INNOVACIÓN</p>
+			<p class="texto">DESARROLLAMOS PROYECTOS RELEVANTES PARA LA SOCIEDAD.</p>
 			<div class="seguir-box">
 				<a href="#">SEGUIR LEYENDO</a>
 			</div>
@@ -285,8 +321,10 @@
 		</div>
 	</section>
 <!-- *********************************************************** -->
-
 	<section id="makers">
+		<figure>
+			<img class="makers-img" src="img/MAKERS_1280.jpg">
+		</figure>
 	</section>
 <!-- *********************************************************** -->
 
@@ -303,7 +341,8 @@
 					<img class="icono-img-item" src="img/one.png"></img>
 				</figure>
 			</div>
-			<p class="texto">TRATAMOS DE ENTENDER AL MUNDO, DE INFORMARNOS INTELIGENTEMENTE Y DE GENERAR EMPATÍA CON EL ENTORNO PARA CREAR SOLUCIONES A PROBLEMAS SOCIALES A PARTIR DE LA TECNOLOGÍA, LA INOVACIÓN Y LA CREATIVIDAD.</p>
+			<p class="texto">TIENES QUE HACER QUE TU PROYECTO FUNCIONE Y GENERE VALOR AGREGADO,</p>
+			<p class="texto">AUN ASI TODAVIA FALTA UN PASO ...</p>
 		</div>
 	</section>
 <!-- *********************************************************** -->

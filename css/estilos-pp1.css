@@ -109,7 +109,7 @@ body
     font-family: 'verlagbook';
     font-size: 16px;
     color: #444444;
-    min-width: 640px;
+    min-width: 320px;
 }
 #menu-header
 {
@@ -215,7 +215,7 @@ h2
     border-width: 5px;
     border-color: #f0f0f0;
     margin-top: 15px;
-    margin-left: 30px;
+    margin-left: 100px;
     padding: 5px;
     position: relative;
 
@@ -250,7 +250,7 @@ h2
     font-family: 'verlagbold';
     position: relative;
     margin-top: 5px;
-    margin-left: 30px;
+    margin-left: 100px;
 }
 #intro .innovation-text, .lab-text
 {
@@ -301,6 +301,10 @@ h2
     padding-top: 100px;
     padding-bottom: 100px;
 
+}
+#logo .logo-box .logo-figure .logo-img
+{
+    content:url("../img/LOGO_280.png");
 }
 /* ------------------------------------------------------- */
 
@@ -659,13 +663,13 @@ h2
     color: white;
 
     display: box;
-    box-orient: horizontal;
+    box-orient: vertical;
 
     display: -webkit-box;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
 
     display: -moz-box;
-    -moz-box-orient: horizontal;
+    -moz-box-orient: vertical;
 }
 #nuestro-equipo .equipo-container > div
 {
@@ -682,8 +686,8 @@ h2
 }
 #nuestro-equipo .equipo-container .persona-item .persona-foto-item .img-item
 {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
 }
 #nuestro-equipo .equipo-container .persona-item .persona-puesto-item
 {
@@ -733,7 +737,21 @@ h2
     margin: 0 auto;
 }
 /* ------------------------------------------------------- */
-
+@media screen and (min-width: 321px){
+    #nuestro-equipo .equipo-container .persona-item .persona-foto-item .img-item
+    {
+        width: 100px;
+        height: 100px;
+    }
+    #intro .cuadro-pp1, #intro .innovation-lab-text
+    {
+        margin-left: 30px;
+    }
+    #logo .logo-box .logo-figure .logo-img
+    {
+        content:url("../img/LOGO_320.png");
+    }
+}
 @media screen and (min-width: 640px){
     .menu-fijo {
         width: 97%;
@@ -746,9 +764,24 @@ h2
     {
         display: block;
     }
+
     #servicios-fix .servicios-container .de4
     {
         display: block;
+    }
+     #nuestro-equipo .equipo-container
+    {
+        padding: 20px;
+        color: white;
+
+        display: box;
+        box-orient: horizontal;
+
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+
+        display: -moz-box;
+        -moz-box-orient: horizontal;
     }
 
 }

@@ -431,18 +431,18 @@ h2
 
 #innovation-lab 
 {
-    padding: 100px;
     height: 300px;
     background: #222222;
     color: white;
     clear: both;
     position: relative;
+    padding-top: 100px;
 }
 #innovation-lab .intro-copy .iconos
 {
     width: 210px;
     margin: 0 auto; /* Centrado */
-    padding-bottom: 155px;
+    padding-bottom: 100px;
 }
 #innovation-lab .intro-copy .iconos .icono-fig-item
 {

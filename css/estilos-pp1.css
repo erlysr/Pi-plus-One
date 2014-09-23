@@ -117,7 +117,7 @@ body
     color: #f0f0f0;
     
     margin: 0 auto;
-    padding: 1em;
+    padding: .7em;
     position: relative;
     overflow: hidden;
 
@@ -128,7 +128,7 @@ body
     font-family: 'verlagbold';
     font-size: 1.2em;
     position: absolute;
-    top: .6em;
+    top: .4em;
     left: 30px;
 }
 #menu-botones li
@@ -147,7 +147,7 @@ body
     background: black;
     color: white;
 
-    padding: .5em;
+    padding: .2em;
     position: relative;
     overflow: hidden;
 }
@@ -169,7 +169,7 @@ body
 .menu-fijo {
     position: fixed;
     top: 0;
-    padding: 1em;
+    padding: .7em;
     left: 0;
     z-index: 1;
     background: black;
@@ -179,7 +179,7 @@ h1
 {
     color: black;
     font-family: 'verlagblack';
-    font-size: 2em;
+    font-size: 1.2em;
     text-align: center;
     margin-bottom: .3em;
 }
@@ -187,7 +187,7 @@ h2
 {
     color: white;
     font-family: 'verlagblack';
-    font-size: 2.2em;
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -195,7 +195,7 @@ h2
 /* ------------------------------------------------------- */
 #intro
 {
-    background: url(../img/INICIO_1280.jpg);
+    background: url(../img/INICIO_320.jpg);
     background-size: 100%;
     color: #f0f0f0;
     background-repeat: no-repeat;
@@ -209,14 +209,14 @@ h2
     font-family: 'verlagbold';
     font-size: 1em;
 
-    width: 110px;
-    height: 132px;
+    width: 90px;
+    height: 112px;
     border-style: solid;
     border-width: 5px;
     border-color: #f0f0f0;
-    margin-top: 15px;
-    margin-left: 100px;
-    padding: 5px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 3px;
     position: relative;
 
     
@@ -233,29 +233,30 @@ h2
 }
 #intro .cuadro-pp1 .logo-pp1-item .logo-verde .img-logo-verde
 {
-    width: 25px;
+    width: 20px;
     height: auto;
 }
 #intro .cuadro-pp1 .logo-pp1-item, .texto-pp1-item
 {
   
-    width: 55px;
-    height: 34px;
+    width: 45px;
+    height: 30px;
     margin: 0 0 0 0;
-    padding: 10px 0 0 0;
+    padding: 7px 0 0 0;
     float: left;
+    font-size: .8em;
 }
 #intro .innovation-lab-text
 {
     font-family: 'verlagbold';
     position: relative;
     margin-top: 5px;
-    margin-left: 100px;
+    margin-left: 30px;
 }
 #intro .innovation-text, .lab-text
 {
     display: inline-block;
-    font-size: .9em;
+    font-size: .7em;
 
 }
 #intro .lab-text
@@ -431,12 +432,12 @@ h2
 
 #innovation-lab 
 {
-    height: 300px;
     background: #222222;
     color: white;
     clear: both;
     position: relative;
-    padding-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 #innovation-lab .intro-copy .iconos
 {
@@ -472,11 +473,12 @@ h2
 {
     overflow: hidden;
     background: white;
+    padding-bottom: 50px;
 }
 #conoce-mas .conoce-mas-container
 {
     overflow: hidden;
-    padding: 20px;
+    padding: 10px;
 
     display: box;
     box-orient: horizontal;
@@ -486,35 +488,34 @@ h2
 
     display: -moz-box;
     -moz-box-orient: horizontal;
+
+    margin: 0 auto;
+    width: 320px;
 }
 #conoce-mas .conoce-mas-container > div
 {
-    box-flex: 1;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
+    box-flex: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
 }
-#conoce-mas .conoce-mas-container .temas-container .tema-item
+
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item
 {
-    text-align: center;
-    position: relative;
-    margin: 10px;
-}
-#conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item
-{
-    margin: 0 auto;     
+    margin: 5px;
+    text-align: center;   
     position: relative;
 
-    width: 220px;
+    width: 140px;
 }
-#conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item figure
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item figure
 {
     margin: 0;
     padding: 0;
     border: 0;
 }
-#conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-titulo
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-titulo
 {
-    width: 220px;
+    width: 140px;
     margin: 0 auto;
     font-family: 'verlagbold';
     color: white;
@@ -523,27 +524,56 @@ h2
     top: 70px;
     left: 0px;
 }
-#conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-circulo-img-item
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1
 {
     border-radius: 50%;
-    width: 220px;
+    width: 100px;
     -webkit-transition: .5s;
 }
-#conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-circulo-img-item:hover
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2
 {
-    -webkit-transform: rotate(360deg);
+    border-radius: 50%;
+    width: 100px;
+    -webkit-transition: .5s;
 }
-#conoce-mas .conoce-mas-container .temas-container .tema-desc-item
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3
 {
-    padding-top: 20px;
-    display: none;
+    border-radius: 50%;
+    width: 100px;
+    -webkit-transition: .5s;
 }
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4
+{
+    
+    border-radius: 50%;
+    -webkit-transition: .5s;
+    
+    width: 100px;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1:hover
+{
+    content:url("../img/wearabletech_activo.jpg");
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2:hover
+{
+    content:url("../img/internetofthings_activo.jpg");
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3:hover
+{
+    content:url("../img/sharingeconomy_activo.jpg");
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4:hover
+{
+    content:url("../img/makermovement_activo.jpg");
+}
+
 /* ------------------------------------------------------- */
 
 #nuestro-equipo
 {
     background: #0ad1be;
     overflow: hidden;
+    padding-bottom: 70px;
 }
 #nuestro-equipo .titulo
 {
@@ -581,7 +611,7 @@ h2
  */
  #nuestro-equipo .equipo-container
 {
-    padding: 20px;
+    
     color: white;
 
     display: box;
@@ -592,12 +622,15 @@ h2
 
     display: -moz-box;
     -moz-box-orient: vertical;
+
+    padding-top: 20px;
+
 }
 #nuestro-equipo .equipo-container > div
 {
-    box-flex: 1;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
+    box-flex: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
 
 }
 #nuestro-equipo .equipo-container .persona-item
@@ -608,27 +641,29 @@ h2
 }
 #nuestro-equipo .equipo-container .persona-item .persona-foto-item .img-item
 {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 #nuestro-equipo .equipo-container .persona-item .persona-puesto-item
 {
     padding-top: 1em;
     padding-bottom: 1em;
+    margin: 0 auto;
+    width: 185px;
 }
 #nuestro-equipo .equipo-container .persona-item .persona-desc-item
 {
-    max-width: 300px;
-    margin: 0 auto;
+    width: 150px;
     display: none;
+    margin: 0 auto;
 }
 /* ------------------------------------------------------- */
 
 #contacto
 {
-    height: 400px;
+   
     background: white;
-    background: url(../img/CONTACTO_1280.jpg);
+    background: url(../img/contacto_640.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -642,36 +677,31 @@ h2
 }
 #contacto .contacto-container .contacto-icono-box
 {
-    padding-top: 80px;
+    padding-top: 3px;
 }
 #contacto .contacto-container .contacto-icono-box .icon-uniE600
 {
-    font-size: 12.5em;
+    font-size: 7em;
     color: white;
 }
 #contacto .contacto-container .contacto-box
 {
 
-    width: 172px;
-    height: 36px;
+    width: 100px;
+    height: 30px;
     border: 3px solid #f0f0f0;
-    padding-top: 12px;
+    padding-top: 6px;
     margin: 0 auto;
 }
 /* ------------------------------------------------------- */
 @media screen and (min-width: 321px){
-    #nuestro-equipo .equipo-container .persona-item .persona-foto-item .img-item
-    {
-        width: 100px;
-        height: 100px;
-    }
-    #intro .cuadro-pp1, #intro .innovation-lab-text
-    {
-        margin-left: 30px;
-    }
     #logo .logo-box .logo-figure .logo-img
     {
         content:url("../img/LOGO_320.png");
+    }
+    #contacto
+    {
+        padding-bottom: 20px;
     }
 }
 @media screen and (min-width: 640px){
@@ -686,11 +716,20 @@ h2
     {
         display: block;
     }
-     #nuestro-equipo .equipo-container
+    #intro .cuadro-pp1
     {
-        padding: 20px;
-        color: white;
-
+        margin-top: 45px;
+    }  
+    #makers .makers-img
+    {
+        content:url("../img/MAKERS_640.jpg");
+    }
+    #conoce-mas .conoce-mas-container
+    {
+        width: 640px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container
+    {
         display: box;
         box-orient: horizontal;
 
@@ -701,11 +740,44 @@ h2
         -moz-box-orient: horizontal;
     }
 
+     #nuestro-equipo .equipo-container
+    {
+        display: box;
+        box-orient: horizontal;
+
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+
+        display: -moz-box;
+        -moz-box-orient: horizontal;
+
+        width: 615px;
+        margin: 0 auto;
+      
+    }
+    #contacto
+    {
+        background: url(../img/contacto_640.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 70px;
+    }
+    #contacto .contacto-container .contacto-icono-box
+    {
+        padding-top: 40px;
+    }
 }
 @media screen and (min-width: 800px){
     #intro .intro-copy .texto 
     {
         font-size: 1.3em;
+    }
+    #intro
+    {
+        background: url(../img/INICIO_800.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #201f1b;
     }
      #quienes-somos .intro-copy .texto 
     {
@@ -743,7 +815,39 @@ h2
     {
         display: block;
     }
-
+    #makers .makers-img
+    {
+        content:url("../img/MAKERS_800.jpg");
+    }
+    #conoce-mas .conoce-mas-container
+    {
+        width: 800px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item
+    {
+        width: 180px;
+        margin: 10px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1
+    {
+        width: 134px;
+        padding: 20px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2
+    {
+        width: 134px;
+        padding: 20px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3
+    {
+        width: 134px;
+        padding: 20px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4
+    {
+        width: 134px;
+        padding: 20px;
+    }
     #innovation-lab .intro-copy .texto 
     {
         font-size: 1.3em;
@@ -752,114 +856,58 @@ h2
     {
         font-size: 3.2em;
     }
-    #conoce-mas
-    {
-        height: 430px;
-    }
-    #conoce-mas .conoce-mas-container
-    {
-        margin: 0 auto;
 
-    }
-    #conoce-mas .conoce-mas-container .temas-container
-    {
-       
-        padding: 0;
-                
-        display: box;
-        box-orient: horizontal;
-
-        display: -webkit-box;
-        -webkit-box-orient: horizontal;
-
-        display: -moz-box;
-        -moz-box-orient: horizontal;
-    }
-
-    #conoce-mas .conoce-mas-container .temas-container .tema-item
-    {
-        margin: 0;
-       
-    }
-    #conoce-mas .conoce-mas-container .temas-container .tema-item > div
-    {
-        box-flex: 1;
-        -webkit-box-flex: 1;
-        -moz-box-flex: 1;          
-    }
-    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item
-    {
-     margin: 0;
-     width: 200px;
-     margin: 0 auto;
-    }
-
-    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-circulo-img-item
-    {
-        width: 180px;
-        margin: 0;
-        padding: 10;
-    }   
-    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-titulo
-    {
-        width: 170px;
-        font-size: 1.4em;
-        top: 60px;
-        left: 15px;
-    }
-    #conoce-mas .conoce-mas-container .temas-container .tema-desc-item
-    {
-        width: 200px;
-        margin: 0 auto;
-        display: block;
-    }
     #nuestro-equipo .equipo-container .persona-item .persona-desc-item
     {
         display: block;
     }
+    #contacto
+    {
+        background: url(../img/contacto_800.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 70px;
+    }
+    #contacto .contacto-container .contacto-icono-box
+    {
+        padding-top: 80px;
+    }
 }
 @media screen and (min-width: 1024px){
-/* 
-    #servicios
+    #intro
     {
-        display: none;
+        background: url(../img/INICIO_1024.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #201f1b;
+    }    
+    #makers .makers-img
+    {
+        content:url("../img/MAKERS_1024.jpg");
     }
-    #servicios4
+    #contacto
     {
-        display: block;
-    } */
-    #conoce-mas
-    {
-        height: 520px;
+        background: url(../img/contacto_1024.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
-    #conoce-mas .conoce-mas-container
+}
+@media screen and (min-width: 1278px){
+    #intro
     {
-        width: 96%;
-        margin-left: 2%;
-        margin-right: 2%;
+        background: url(../img/INICIO_1280.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #201f1b;
+    }    
+    #makers .makers-img
+    {
+        content:url("../img/MAKERS_1280.jpg");
     }
-    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item
+    #contacto
     {
-     margin: 0;
-     width: 230px;
-     margin: 0 auto;
-     padding: 10px;
+        background: url(../img/contacto_1280.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
-
-    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-circulo-img-item
-    {
-        width: 210px;
-        margin: 0;
-        padding: 10px;
-    }   
-    #conoce-mas .conoce-mas-container .temas-container .tema-item .tema-circulo-item .tema-titulo
-    {
-        width: 200px;
-        font-size: 1.6em;
-        top: 85px;
-        left: 25px;
-    }
-    #conoce-mas .conoce-mas-container .temas-container .tema-desc-item
-    {
-        width: 230px;
-    }
+}

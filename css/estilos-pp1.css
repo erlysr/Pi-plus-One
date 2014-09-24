@@ -197,6 +197,51 @@ h2
     position: relative;
     background-color: #201f1b;
     clear: both;
+    padding-bottom: 70px;
+}
+#intro .cuadro-pp1-small
+{
+    font-family: 'verlagbold';
+    font-size: .5em;
+    width: 45px;
+    height: 56px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f0f0f0;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 2px;
+    position: relative;
+
+    
+}
+#intro .cuadro-pp1-small .logo-pp1-item
+{
+    text-align: center;
+
+}
+#intro .cuadro-pp1-small .logo-pp1-item .logo-verde
+{
+    margin: 0;
+    padding: 0;
+
+}
+#intro .cuadro-pp1-small .logo-pp1-item .logo-verde .img-logo-verde
+{
+    width: 10px;
+    height: auto;
+    
+}
+#intro .cuadro-pp1-small .logo-pp1-item, #intro .cuadro-pp1-small .texto-pp1-item
+{
+  
+    width: 22.5px;
+    height: 15px;
+    margin: 0 0 0 0;
+    padding: 3px 0 0 0;
+    float: left;
+    font-size: 1em;
+
 }
 #intro .cuadro-pp1
 {
@@ -214,7 +259,7 @@ h2
     margin-left: 30px;
     padding: 3px;
     position: relative;
-
+    display: none;
     
 }
 #intro .cuadro-pp1 .logo-pp1-item
@@ -242,18 +287,18 @@ h2
     float: left;
     font-size: .8em;
 }
+
 #intro .innovation-lab-text
 {
     font-family: 'verlagbold';
     position: relative;
-    margin-top: 5px;
+    margin-top: -5px;
     margin-left: 30px;
 }
 #intro .innovation-text, .lab-text
 {
     display: inline-block;
-    font-size: .7em;
-
+    font-size: .4em;
 }
 #intro .lab-text
 {
@@ -271,6 +316,7 @@ h2
     margin-right: 5%;
     width: 90%;
     text-align: center;
+    font-size: .5em;
 }
 #intro .intro-copy .seguir-box
 {
@@ -297,18 +343,19 @@ h2
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
-
+    width: 210px;
+    margin: 0 auto;
 }
 #logo .logo-box .logo-figure .logo-img
 {
-    content:url("../img/LOGO_280.png");
+    content:url("../img/LOGO_210.png");
 }
 /* ------------------------------------------------------- */
 
 #quienes-somos
 {
     background: #0ad1be;
-    height: 400px;
+    padding-bottom: 100px;
     color: #f0f0f0;
 }
 #quienes-somos .intro-copy
@@ -323,6 +370,7 @@ h2
     margin-right: 5%;
     width: 90%;
     text-align: center;
+    font-size: .5em;
 }
 #quienes-somos .intro-copy .seguir-box
 {
@@ -340,6 +388,8 @@ h2
     overflow: hidden;
     background: white;
     clear: both;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 #servicios .servicios-container
 {
@@ -408,7 +458,7 @@ h2
 {
     color: white;
     font-family: 'verlagbook';
-    
+    font-size: .8em;
  }
  
  /* ------------------------------------------------------- */
@@ -437,21 +487,21 @@ h2
 }
 #innovation-lab .intro-copy .iconos
 {
-    width: 210px;
+    width: 105px;
     margin: 0 auto; /* Centrado */
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 #innovation-lab .intro-copy .iconos .icono-fig-item
 {
     margin: 0;
-    padding: 10px;
+    padding: 5px;
     border: 0;
     float: left;
 }
 #innovation-lab .intro-copy .iconos .icono-fig-item .icono-img-item
 {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
 #innovation-lab .intro-copy .texto 
@@ -462,6 +512,7 @@ h2
     margin-right: 5%;
     width: 90%;
     text-align: center;
+    font-size: .45em;
 }
 /* ------------------------------------------------------- */
 
@@ -469,7 +520,7 @@ h2
 {
     overflow: hidden;
     background: white;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 #conoce-mas .conoce-mas-container
 {
@@ -502,6 +553,8 @@ h2
     position: relative;
 
     width: 140px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item figure
 {
@@ -569,7 +622,7 @@ h2
 {
     background: #0ad1be;
     overflow: hidden;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 #nuestro-equipo .titulo
 {
@@ -665,6 +718,8 @@ h2
     overflow: hidden;
     position: relative;
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #contacto .contacto-container
 {
@@ -677,7 +732,7 @@ h2
 }
 #contacto .contacto-container .contacto-icono-box .icon-uniE600
 {
-    font-size: 7em;
+    font-size: 3em;
     color: white;
 }
 #contacto .contacto-container .contacto-box
@@ -691,13 +746,19 @@ h2
 }
 /* ------------------------------------------------------- */
 @media screen and (min-width: 321px){
+    #logo .logo-box
+    {
+        width: 320px;
+        margin: 0 auto;
+    }
     #logo .logo-box .logo-figure .logo-img
     {
         content:url("../img/LOGO_320.png");
     }
     #contacto
     {
-        padding-bottom: 20px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }
 @media screen and (min-width: 640px){
@@ -716,6 +777,32 @@ h2
     {
         margin-top: 45px;
     }  
+    #intro .intro-copy .texto 
+    {
+        font-size: 1em;
+    }
+    #quienes-somos .intro-copy .texto 
+    {
+        font-size: 1em;
+    }
+    #servicios .servicios-container
+    {   
+        display: box;
+        box-orient: horizontal;
+
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+
+        display: -moz-box;
+        -moz-box-orient: horizontal;
+
+        margin: 0 auto;
+        width: 640px;
+    }
+    #innovation-lab .intro-copy .texto 
+    {
+        font-size: .9em;
+    }
     #makers .makers-img
     {
         content:url("../img/MAKERS_640.jpg");
@@ -756,46 +843,20 @@ h2
         background: url(../img/contacto_640.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
-        padding-bottom: 70px;
     }
-    #contacto .contacto-container .contacto-icono-box
+    #contacto .contacto-container .contacto-icono-box .icon-uniE600
     {
-        padding-top: 40px;
+        font-size: 7em;
     }
 }
 @media screen and (min-width: 800px){
-
-     #quienes-somos .intro-copy .texto 
+    h1, h2
     {
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
-    #servicios .servicios-container
+    #intro
     {
-        
-        display: box;
-        box-orient: horizontal;
-
-        display: -webkit-box;
-        -webkit-box-orient: horizontal;
-
-        display: -moz-box;
-        -moz-box-orient: horizontal;
-
-        margin: 0 auto;
-        width: 800px;
-
-    }
-
-    #servicios .servicios-container .servicios-container-boxes .servicio-box-item
-    {
-        margin: 10px;
-        width: 180px;
-    }
-     #servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item .imagen-item
-    {
-        width: 134px;
-        height: 134px;
-        padding: 20px;
+        padding-bottom: 100px;
     }
     #servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
     {
@@ -804,6 +865,11 @@ h2
     #makers .makers-img
     {
         content:url("../img/MAKERS_800.jpg");
+    }
+    #innovation-lab
+    {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     #conoce-mas .conoce-mas-container
     {
@@ -834,15 +900,6 @@ h2
         width: 134px;
         padding: 20px;
     }
-    #innovation-lab .intro-copy .texto 
-    {
-        font-size: 1.3em;
-    }
-    h1, h2
-    {
-        font-size: 3.2em;
-    }
-
     #nuestro-equipo .equipo-container .persona-item .persona-desc-item
     {
         display: block;
@@ -852,14 +909,15 @@ h2
         background: url(../img/contacto_800.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
+        padding-top: 70px;
         padding-bottom: 70px;
-    }
-    #contacto .contacto-container .contacto-icono-box
-    {
-        padding-top: 80px;
     }
 }
 @media screen and (min-width: 1024px){
+    h1, h2
+    {
+        font-size: 3.2em;
+    }
     #intro
     {
         background: url(../img/INICIO_1024.jpg);
@@ -867,6 +925,40 @@ h2
         background-repeat: no-repeat;
         background-color: #201f1b;
     }    
+    #intro .cuadro-pp1-small
+    {
+        display: none;
+    }
+    #intro .cuadro-pp1
+    {
+        display: block;
+    }
+    #intro .innovation-text, .lab-text
+    {
+        font-size: .7em;
+    }
+    #intro .intro-copy .texto 
+    {
+        font-size: 1.2em;
+    }
+    #quienes-somos .intro-copy .texto 
+    {
+        font-size: 1.2em;
+    }
+    #innovation-lab .intro-copy .texto 
+    {
+        font-size: 1.1em;
+    }
+    #innovation-lab .intro-copy .iconos
+    {
+        width: 180px;
+        padding-bottom: 100px;
+    }
+    #innovation-lab .intro-copy .iconos .icono-fig-item .icono-img-item
+    {
+        width: 50px;
+        height: 50px;
+    }
     #intro .intro-copy
     {
         margin-top: 0;
@@ -880,6 +972,8 @@ h2
         background: url(../img/contacto_1024.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 @media screen and (min-width: 1278px){
@@ -893,6 +987,7 @@ h2
         background-size: 100%;
         background-repeat: no-repeat;
         background-color: #201f1b;
+        padding-bottom: 130px;
     }    
     #makers .makers-img
     {

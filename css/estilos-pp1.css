@@ -151,21 +151,17 @@ body
     position: relative;
     overflow: hidden;
 }
-#menu-botones-smart
-{
-    list-style-type: none;
-    float: right;
-    padding-right: 20px;
-}
-#menu-botones-smart .boton-lista .icon-list
+#menu-header-smart .icon-list
 {
     font-size: 2em;
 }
-#menu-botones-smart .boton-lista .submenu
+#submenu
 {
     list-style-type: none;
+    padding-right: 20px;
 
 }
+
 .menu-fijo {
     position: fixed;
     top: 0;
@@ -195,10 +191,8 @@ h2
 /* ------------------------------------------------------- */
 #intro
 {
-    background: url(../img/INICIO_320.jpg);
-    background-size: 100%;
+
     color: #f0f0f0;
-    background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
     background-color: #201f1b;
@@ -208,11 +202,13 @@ h2
 {
     font-family: 'verlagbold';
     font-size: 1em;
-
+/*
+    width: 90px;
+    height: 112px; */
     width: 90px;
     height: 112px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 3px;
     border-color: #f0f0f0;
     margin-top: 20px;
     margin-left: 30px;
@@ -266,7 +262,7 @@ h2
 }
 #intro .intro-copy
 {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 #intro .intro-copy .texto 
 {
@@ -283,7 +279,7 @@ h2
     border: 3px solid #f0f0f0;
     text-align: center;
     padding-top: 12px;
-    margin: 50px auto 50px auto;
+    margin: 25px auto 25px auto;
 }
 /* ------------------------------------------------------- */
 
@@ -768,17 +764,7 @@ h2
     }
 }
 @media screen and (min-width: 800px){
-    #intro .intro-copy .texto 
-    {
-        font-size: 1.3em;
-    }
-    #intro
-    {
-        background: url(../img/INICIO_800.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-color: #201f1b;
-    }
+
      #quienes-somos .intro-copy .texto 
     {
         font-size: 1.3em;
@@ -881,6 +867,10 @@ h2
         background-repeat: no-repeat;
         background-color: #201f1b;
     }    
+    #intro .intro-copy
+    {
+        margin-top: 0;
+    }
     #makers .makers-img
     {
         content:url("../img/MAKERS_1024.jpg");
@@ -893,6 +883,10 @@ h2
     }
 }
 @media screen and (min-width: 1278px){
+    #intro .intro-copy .texto 
+    {
+        font-size: 1.3em;
+    }
     #intro
     {
         background: url(../img/INICIO_1280.jpg);

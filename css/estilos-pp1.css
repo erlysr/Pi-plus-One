@@ -105,7 +105,7 @@ header
 }
 body
 {
-    background: white;
+    background: black;
     font-family: 'verlagbook';
     font-size: 16px;
     color: #444444;
@@ -150,6 +150,7 @@ body
     padding: .2em;
     position: relative;
     overflow: hidden;
+    float: right;
 }
 #menu-header-smart .icon-list
 {
@@ -159,7 +160,8 @@ body
 {
     list-style-type: none;
     padding-right: 20px;
-
+    display: none;
+    float: left;
 }
 
 .menu-fijo {
@@ -197,14 +199,14 @@ h2
     position: relative;
     background-color: #201f1b;
     clear: both;
-    padding-bottom: 70px;
+  
 }
 #intro .cuadro-pp1-small
 {
     font-family: 'verlagbold';
-    font-size: .5em;
-    width: 45px;
-    height: 56px;
+    font-size: .6em;
+    width: 55px;
+    height: 66px;
     border-style: solid;
     border-width: 3px;
     border-color: #f0f0f0;
@@ -228,15 +230,15 @@ h2
 }
 #intro .cuadro-pp1-small .logo-pp1-item .logo-verde .img-logo-verde
 {
-    width: 10px;
+    width: 13px;
     height: auto;
     
 }
 #intro .cuadro-pp1-small .logo-pp1-item, #intro .cuadro-pp1-small .texto-pp1-item
 {
   
-    width: 22.5px;
-    height: 15px;
+    width: 25.5px;
+    height: 19px;
     margin: 0 0 0 0;
     padding: 3px 0 0 0;
     float: left;
@@ -298,7 +300,7 @@ h2
 #intro .innovation-text, .lab-text
 {
     display: inline-block;
-    font-size: .4em;
+    font-size: .45em;
 }
 #intro .lab-text
 {
@@ -308,6 +310,7 @@ h2
 #intro .intro-copy
 {
     margin-top: 1em;
+    padding-bottom: 50px;
 }
 #intro .intro-copy .texto 
 {
@@ -332,35 +335,38 @@ h2
 #logo
 {
     background: #f0f0f0;
-    height: 400px;
+
     color: #444444;
     position: relative;
     width: 100%;
     overflow: hidden;
+
 }
 #logo .logo-box
 {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 210px;
+    padding-top: 55px;
+    padding-bottom: 55px;  
+    width: 130px;
     margin: 0 auto;
 }
 #logo .logo-box .logo-figure .logo-img
 {
     content:url("../img/LOGO_210.png");
+    width: 130px;
 }
 /* ------------------------------------------------------- */
 
 #quienes-somos
 {
     background: #0ad1be;
-    padding-bottom: 100px;
+    
     color: #f0f0f0;
 }
 #quienes-somos .intro-copy
 {
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 #quienes-somos .intro-copy .texto 
 {
@@ -371,6 +377,7 @@ h2
     width: 90%;
     text-align: center;
     font-size: .5em;
+
 }
 #quienes-somos .intro-copy .seguir-box
 {
@@ -433,18 +440,22 @@ h2
 }
 #servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item .imagen-item
 {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+    width: 70px;
+    height: 70px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     vertical-align: top;
 }
 #servicios .servicios-container .servicios-container-boxes .servicio-box-item .titulo-item
 {
     background: #0ad1be;
     color: white;
-    height: 2em;
+    height: 1.8em;
     text-align: center;
-    padding-top: .8em;
+    padding-top: .45em;
+    font-size: .7em;
 }
 #servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
 {
@@ -482,8 +493,12 @@ h2
     color: white;
     clear: both;
     position: relative;
-    padding-top: 70px;
-    padding-bottom: 70px;
+}
+
+#innovation-lab .intro-copy
+{
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 #innovation-lab .intro-copy .iconos
 {
@@ -520,7 +535,8 @@ h2
 {
     overflow: hidden;
     background: white;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 #conoce-mas .conoce-mas-container
 {
@@ -687,11 +703,12 @@ h2
     text-align: center;
     padding: 0px;
     margin: 10px;
+
 }
 #nuestro-equipo .equipo-container .persona-item .persona-foto-item .img-item
 {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 #nuestro-equipo .equipo-container .persona-item .persona-puesto-item
 {
@@ -699,6 +716,7 @@ h2
     padding-bottom: 1em;
     margin: 0 auto;
     width: 185px;
+    font-size: .8em;
 }
 #nuestro-equipo .equipo-container .persona-item .persona-desc-item
 {
@@ -762,6 +780,10 @@ h2
     }
 }
 @media screen and (min-width: 640px){
+    h1, h2
+    {
+        font-size: 1.8em;
+    }
     .menu-fijo {
         width: 97%;
     }
@@ -780,6 +802,21 @@ h2
     #intro .intro-copy .texto 
     {
         font-size: 1em;
+    }
+    #logo .logo-box
+    {
+        padding-top: 70px;
+        padding-bottom: 70px; 
+        width: 150px;
+    }
+    #logo .logo-box .logo-figure .logo-img
+    {
+        width: 150px;
+    }
+    #quienes-somos .intro-copy
+    {
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
     #quienes-somos .intro-copy .texto 
     {
@@ -807,9 +844,15 @@ h2
     {
         content:url("../img/MAKERS_640.jpg");
     }
+    #innovation-lab .intro-copy
+    {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
     #conoce-mas .conoce-mas-container
     {
         width: 640px;
+        padding-top: 40px;
     }
     #conoce-mas .conoce-mas-container .temas-container
     {
@@ -836,6 +879,7 @@ h2
 
         width: 615px;
         margin: 0 auto;
+        padding-top: 40px;
       
     }
     #contacto
@@ -850,12 +894,18 @@ h2
     }
 }
 @media screen and (min-width: 800px){
-    h1, h2
+    #intro .intro-copy
     {
-        font-size: 1.8em;
+        padding-bottom: 80px;
     }
-    #intro
+    #logo .logo-box
     {
+        padding-top: 100px;
+        padding-bottom: 100px; 
+    }
+    #quienes-somos .intro-copy
+    {
+        padding-top: 100px;
         padding-bottom: 100px;
     }
     #servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
@@ -866,7 +916,7 @@ h2
     {
         content:url("../img/MAKERS_800.jpg");
     }
-    #innovation-lab
+    #innovation-lab .intro-copy
     {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -933,9 +983,33 @@ h2
     {
         font-size: .7em;
     }
+    #intro .intro-copy
+    {
+        margin-top: 0;
+    }
     #intro .intro-copy .texto 
     {
         font-size: 1.2em;
+    }
+    #logo .logo-box
+    {
+        padding-top: 120px;
+        padding-bottom: 120px; 
+        width: 170px;
+    }
+    #logo .logo-box .logo-figure .logo-img
+    {
+        width: 170px;
+    }
+    #quienes-somos .intro-copy
+    {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    #innovation-lab .intro-copy
+    {
+        padding-top: 140px;
+        padding-bottom: 140px;
     }
     #quienes-somos .intro-copy .texto 
     {
@@ -954,10 +1028,6 @@ h2
     {
         width: 50px;
         height: 50px;
-    }
-    #intro .intro-copy
-    {
-        margin-top: 0;
     }
     #makers .makers-img
     {
@@ -983,7 +1053,7 @@ h2
         background-size: 100%;
         background-repeat: no-repeat;
         background-color: #201f1b;
-        padding-bottom: 170px;
+      
     }    
     #makers .makers-img
     {

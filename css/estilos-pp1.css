@@ -707,8 +707,8 @@ h2
 }
 #nuestro-equipo .equipo-container .persona-item .persona-foto-item .img-item
 {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 #nuestro-equipo .equipo-container .persona-item .persona-puesto-item
 {
@@ -964,13 +964,14 @@ h2
     }
 }
 @media screen and (min-width: 1024px){
+    /*
     #intro
     {
         background: url(../img/INICIO_1024.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-color: #201f1b;
-    }    
+    } */   
     #intro .cuadro-pp1-small
     {
         display: none;
@@ -995,11 +996,11 @@ h2
     {
         padding-top: 120px;
         padding-bottom: 120px; 
-        width: 170px;
+        width: 190px;
     }
     #logo .logo-box .logo-figure .logo-img
     {
-        width: 170px;
+        width: 190px;
     }
     #quienes-somos .intro-copy
     {
@@ -1047,6 +1048,7 @@ h2
     {
         font-size: 1.3em;
     }
+    /*
     #intro
     {
         background: url(../img/INICIO_1280.jpg);
@@ -1054,7 +1056,7 @@ h2
         background-repeat: no-repeat;
         background-color: #201f1b;
       
-    }    
+    }    */
     #makers .makers-img
     {
         content:url("../img/MAKERS_1280.jpg");

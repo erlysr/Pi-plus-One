@@ -107,7 +107,7 @@ body
 {
     background: black;
     font-family: 'verlagbook';
-    font-size: 16px;
+    font-size: 12px;
     color: #444444;
     min-width: 320px;
 }
@@ -201,116 +201,24 @@ h2
     clear: both;
   
 }
-#intro .cuadro-pp1-small
+#intro .pp1-logo
 {
-    font-family: 'verlagbold';
-    font-size: .6em;
-    width: 55px;
-    height: 66px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #f0f0f0;
-    margin-top: 20px;
-    margin-left: 30px;
-    padding: 2px;
-    position: relative;
-
-    
+    width: 75px;
+    margin: 0 auto;
 }
-#intro .cuadro-pp1-small .logo-pp1-item
+#intro .pp1-logo .logo-pp1-fig
 {
-    text-align: center;
-
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
-#intro .cuadro-pp1-small .logo-pp1-item .logo-verde
+#intro .pp1-logo .logo-pp1-img
 {
-    margin: 0;
-    padding: 0;
-
-}
-#intro .cuadro-pp1-small .logo-pp1-item .logo-verde .img-logo-verde
-{
-    width: 13px;
-    height: auto;
-    
-}
-#intro .cuadro-pp1-small .logo-pp1-item, #intro .cuadro-pp1-small .texto-pp1-item
-{
-  
-    width: 25.5px;
-    height: 19px;
-    margin: 0 0 0 0;
-    padding: 3px 0 0 0;
-    float: left;
-    font-size: 1em;
-
-}
-#intro .cuadro-pp1
-{
-    font-family: 'verlagbold';
-    font-size: 1em;
-/*
-    width: 90px;
-    height: 112px; */
-    width: 90px;
-    height: 112px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #f0f0f0;
-    margin-top: 20px;
-    margin-left: 30px;
-    padding: 3px;
-    position: relative;
-    display: none;
-    
-}
-#intro .cuadro-pp1 .logo-pp1-item
-{
-    text-align: center;
-
-}
-#intro .cuadro-pp1 .logo-pp1-item .logo-verde
-{
-    margin: 0;
-    padding: 0;
-}
-#intro .cuadro-pp1 .logo-pp1-item .logo-verde .img-logo-verde
-{
-    width: 20px;
-    height: auto;
-}
-#intro .cuadro-pp1 .logo-pp1-item, .texto-pp1-item
-{
-  
-    width: 45px;
-    height: 30px;
-    margin: 0 0 0 0;
-    padding: 7px 0 0 0;
-    float: left;
-    font-size: .8em;
-}
-
-#intro .innovation-lab-text
-{
-    font-family: 'verlagbold';
-    position: relative;
-    margin-top: -5px;
-    margin-left: 30px;
-}
-#intro .innovation-text, .lab-text
-{
-    display: inline-block;
-    font-size: .45em;
-}
-#intro .lab-text
-{
-    padding: 0 0 0 .5em;
-    color: #0ad1be;
+    width: 75px;
 }
 #intro .intro-copy
 {
-    margin-top: 1em;
-    padding-bottom: 50px;
+    padding-top: 2em;
+    padding-bottom: 30px;
 }
 #intro .intro-copy .texto 
 {
@@ -323,12 +231,13 @@ h2
 }
 #intro .intro-copy .seguir-box
 {
-    width: 172px;
-    height: 36px;
-    border: 3px solid #f0f0f0;
+    width: 210px;
+    height: 20px;
+    border: 2px solid #f0f0f0;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 5px;
     margin: 25px auto 25px auto;
+    font-size: .9em;
 }
 /* ------------------------------------------------------- */
 
@@ -390,14 +299,92 @@ h2
 }
 
 /* ------------------------------------------------------- */
-#servicios
+#servicios, #servicios-1024
 {
     overflow: hidden;
     background: white;
     clear: both;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: relative;
 }
+#servicios-1024
+{
+    display: none;
+}
+#servicios-1024 .container
+{
+    margin: 0 auto;
+    width: 1024;
+    max-width: 1280px;
+    position: relative;
+}
+#servicios-1024 .container .futuristic-img
+{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 55px;
+}
+#servicios-1024 .container .futuristic-img:hover
+{
+    content:url("../img-v1/futuristic_activado.jpg");
+}
+#servicios-1024 .container .makermovement-img
+{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 198px;
+}
+#servicios-1024 .container .makermovement-img:hover
+{
+    content:url("../img-v1/makermovement_activado.jpg");
+}
+#servicios-1024 .container .inhouse-img
+{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 336px;
+}
+#servicios-1024 .container .inhouse-img:hover
+{
+    content:url("../img-v1/inhouse_activado.jpg");
+}
+#servicios-1024 .container .trend-img
+{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 475px;
+}
+#servicios-1024 .container .trend-img:hover
+{
+    content:url("../img-v1/trend_activado.jpg");
+}
+#servicios-1024 .container .container-fondo
+{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+#servicios-1024 .container .container-fondo .fondo
+{
+    width: 511px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+#servicios-1024 .container .container-fondo .titulo-servicios
+{
+    position: absolute;
+    top: -10px;
+    right: 180px;
+}
+
+/* ------------------------------------------------------- */
+
 #servicios .servicios-container
 {
     margin: 0 auto;
@@ -471,7 +458,6 @@ h2
     font-family: 'verlagbook';
     font-size: .8em;
  }
- 
  /* ------------------------------------------------------- */
 
 #makers
@@ -500,20 +486,20 @@ h2
     padding-bottom: 60px;
     padding-top: 60px;
 }
-#innovation-lab .intro-copy .iconos
+#innovation-lab .intro-copy .iconos, #quienes-somos .intro-copy .iconos
 {
     width: 105px;
     margin: 0 auto; /* Centrado */
     padding-bottom: 50px;
 }
-#innovation-lab .intro-copy .iconos .icono-fig-item
+#innovation-lab .intro-copy .iconos .icono-fig-item, #quienes-somos .intro-copy .iconos .icono-fig-item
 {
     margin: 0;
     padding: 5px;
     border: 0;
     float: left;
 }
-#innovation-lab .intro-copy .iconos .icono-fig-item .icono-img-item
+#innovation-lab .intro-copy .iconos .icono-fig-item .icono-img-item, #quienes-somos .intro-copy .iconos .icono-fig-item .icono-img-item
 {
     width: 25px;
     height: 25px;
@@ -553,7 +539,7 @@ h2
     -moz-box-orient: horizontal;
 
     margin: 0 auto;
-    width: 320px;
+    width: 240px;
 }
 #conoce-mas .conoce-mas-container > div
 {
@@ -564,11 +550,11 @@ h2
 
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item
 {
-    margin: 5px;
+    padding: 5px;
     text-align: center;   
     position: relative;
 
-    width: 140px;
+    width: 110px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
@@ -578,17 +564,7 @@ h2
     padding: 0;
     border: 0;
 }
-#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-titulo
-{
-    width: 140px;
-    margin: 0 auto;
-    font-family: 'verlagbold';
-    color: white;
-    font-size: 1.8em;
-    position: absolute;
-    top: 70px;
-    left: 0px;
-}
+
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1
 {
     border-radius: 50%;
@@ -615,23 +591,35 @@ h2
     
     width: 100px;
 }
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item5
+{
+    
+    border-radius: 50%;
+    -webkit-transition: .5s;
+    
+    width: 100px;
+    display: none;
+}
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1:hover
 {
-    content:url("../img/wearabletech_activo.jpg");
+    content:url("../img-v1/impresion3d_activo.jpg");
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2:hover
 {
-    content:url("../img/internetofthings_activo.jpg");
+    content:url("../img-v1/wearable_activo.jpg");
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3:hover
 {
-    content:url("../img/sharingeconomy_activo.jpg");
+    content:url("../img-v1/internetcosas_activo.jpg");
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4:hover
 {
-    content:url("../img/makermovement_activo.jpg");
+    content:url("../img-v1/economia_activo.jpg");
 }
-
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item5:hover
+{
+    content:url("../img-v1/drones_activo.jpg");
+}
 /* ------------------------------------------------------- */
 
 #nuestro-equipo
@@ -716,7 +704,7 @@ h2
     padding-bottom: 1em;
     margin: 0 auto;
     width: 185px;
-    font-size: .8em;
+    font-size: 1em;
 }
 #nuestro-equipo .equipo-container .persona-item .persona-desc-item
 {
@@ -795,10 +783,6 @@ h2
     {
         display: block;
     }
-    #intro .cuadro-pp1
-    {
-        margin-top: 45px;
-    }  
     #intro .intro-copy .texto 
     {
         font-size: 1em;
@@ -836,10 +820,6 @@ h2
         margin: 0 auto;
         width: 640px;
     }
-    #innovation-lab .intro-copy .texto 
-    {
-        font-size: .9em;
-    }
     #makers .makers-img
     {
         content:url("../img/MAKERS_640.jpg");
@@ -849,9 +829,13 @@ h2
         padding-top: 90px;
         padding-bottom: 90px;
     }
+    #innovation-lab .intro-copy .texto 
+    {
+        font-size: 1em;
+    }
     #conoce-mas .conoce-mas-container
     {
-        width: 640px;
+        width: 480px;
         padding-top: 40px;
     }
     #conoce-mas .conoce-mas-container .temas-container
@@ -864,8 +848,8 @@ h2
 
         display: -moz-box;
         -moz-box-orient: horizontal;
+      
     }
-
      #nuestro-equipo .equipo-container
     {
         display: box;
@@ -923,32 +907,31 @@ h2
     }
     #conoce-mas .conoce-mas-container
     {
-        width: 800px;
+        width: 560px;
     }
     #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item
     {
-        width: 180px;
-        margin: 10px;
+        width: 130px;
     }
     #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1
     {
-        width: 134px;
-        padding: 20px;
+        width: 120px;
+        
     }
     #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2
     {
-        width: 134px;
-        padding: 20px;
+        width: 120px;
+        
     }
     #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3
     {
-        width: 134px;
-        padding: 20px;
+        width: 120px;
+        
     }
     #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4
     {
-        width: 134px;
-        padding: 20px;
+        width: 120px;
+        
     }
     #nuestro-equipo .equipo-container .persona-item .persona-desc-item
     {
@@ -971,14 +954,18 @@ h2
         background-size: 100%;
         background-repeat: no-repeat;
         background-color: #201f1b;
-    } */   
-    #intro .cuadro-pp1-small
+    } */  
+        h1, h2
     {
-        display: none;
+        font-size: 2.4em;
+    } 
+    #intro .pp1-logo
+    {
+        width: 106px;
     }
-    #intro .cuadro-pp1
+    #intro .pp1-logo .logo-pp1-fig .logo-pp1-img
     {
-        display: block;
+        width: 106px;
     }
     #intro .innovation-text, .lab-text
     {
@@ -1016,23 +1003,27 @@ h2
     {
         font-size: 1.2em;
     }
-    #innovation-lab .intro-copy .texto 
+    #servicios-1024
     {
-        font-size: 1.1em;
+        display: block;
     }
-    #innovation-lab .intro-copy .iconos
+    #servicios
     {
-        width: 180px;
-        padding-bottom: 100px;
-    }
-    #innovation-lab .intro-copy .iconos .icono-fig-item .icono-img-item
-    {
-        width: 50px;
-        height: 50px;
+        display: none;
     }
     #makers .makers-img
     {
         content:url("../img/MAKERS_1024.jpg");
+    }
+    #conoce-mas .conoce-mas-container
+    {
+        width: 700px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item5
+    {
+        display: block;
+        width: 120px;
+
     }
     #contacto
     {

@@ -1,0 +1,1070 @@
+/* Codigo generado para los fonts e iconos */
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?s1x7ii');
+    src:url('../fonts/icomoon.eot?#iefixs1x7ii') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?s1x7ii') format('woff'),
+        url('../fonts/icomoon.ttf?s1x7ii') format('truetype'),
+        url('../fonts/icomoon.svg?s1x7ii#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE602:before {
+    content: "\e602";
+}
+.icon-uniE600:before {
+    content: "\e600";
+}
+.icon-uniE601:before {
+    content: "\e601";
+}
+.icon-list:before {
+    content: "\e603";
+}
+
+@font-face {
+    font-family: 'verlagblack';
+    src: url('../fonts/verlag-black-webfont.eot');
+    src: url('../fonts/verlag-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/verlag-black-webfont.woff') format('woff'),
+         url('../fonts/verlag-black-webfont.ttf') format('truetype'),
+         url('../fonts/verlag-black-webfont.svg#verlagblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'verlagbold';
+    src: url('../fonts/verlag-bold-webfont.eot');
+    src: url('../fonts/verlag-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/verlag-bold-webfont.woff') format('woff'),
+         url('../fonts/verlag-bold-webfont.ttf') format('truetype'),
+         url('../fonts/verlag-bold-webfont.svg#verlagbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'verlagbook';
+    src: url('../fonts/verlag-book-webfont.eot');
+    src: url('../fonts/verlag-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/verlag-book-webfont.woff') format('woff'),
+         url('../fonts/verlag-book-webfont.ttf') format('truetype'),
+         url('../fonts/verlag-book-webfont.svg#verlagbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* diseño de la pagina */
+*
+{  
+    margin: 0;
+}
+a
+{
+    color: #f0f0f0;
+    text-decoration: none;
+}
+figure
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+}
+header
+{
+    background: black;
+}
+body
+{
+    background: black;
+    font-family: 'verlagbook';
+    font-size: 16px;
+    color: #444444;
+    min-width: 320px;
+}
+#menu-header
+{
+    background: black;
+    color: #f0f0f0;
+    
+    margin: 0 auto;
+    padding: .7em;
+    position: relative;
+    overflow: hidden;
+
+    display: none;
+}
+#menu-botones .boton-pp1
+{
+    font-family: 'verlagbold';
+    font-size: 1.2em;
+    position: absolute;
+    top: .4em;
+    left: 30px;
+}
+#menu-botones li
+{
+    display: inline-block;
+    padding: 0 2em 0 0;
+    float: right;
+}
+#menu-botones .boton-derecha
+{
+    padding: 0;
+}
+
+#menu-header-smart
+{
+    background: black;
+    color: white;
+
+    padding: .2em;
+    position: relative;
+    overflow: hidden;
+    float: right;
+}
+#menu-header-smart .icon-list
+{
+    font-size: 2em;
+}
+#submenu
+{
+    list-style-type: none;
+    padding-right: 20px;
+    display: none;
+    float: left;
+}
+
+.menu-fijo {
+    position: fixed;
+    top: 0;
+    padding: .7em;
+    left: 0;
+    z-index: 1;
+    background: black;
+    width: 620px;
+}
+h1
+{
+    color: black;
+    font-family: 'verlagblack';
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: .3em;
+}
+h2
+{
+    color: white;
+    font-family: 'verlagblack';
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+/* ------------------------------------------------------- */
+#intro
+{
+
+    color: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+    background-color: #201f1b;
+    clear: both;
+  
+}
+#intro .cuadro-pp1-small
+{
+    font-family: 'verlagbold';
+    font-size: .6em;
+    width: 55px;
+    height: 66px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f0f0f0;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 2px;
+    position: relative;
+
+    
+}
+#intro .cuadro-pp1-small .logo-pp1-item
+{
+    text-align: center;
+
+}
+#intro .cuadro-pp1-small .logo-pp1-item .logo-verde
+{
+    margin: 0;
+    padding: 0;
+
+}
+#intro .cuadro-pp1-small .logo-pp1-item .logo-verde .img-logo-verde
+{
+    width: 13px;
+    height: auto;
+    
+}
+#intro .cuadro-pp1-small .logo-pp1-item, #intro .cuadro-pp1-small .texto-pp1-item
+{
+  
+    width: 25.5px;
+    height: 19px;
+    margin: 0 0 0 0;
+    padding: 3px 0 0 0;
+    float: left;
+    font-size: 1em;
+
+}
+#intro .cuadro-pp1
+{
+    font-family: 'verlagbold';
+    font-size: 1em;
+/*
+    width: 90px;
+    height: 112px; */
+    width: 90px;
+    height: 112px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f0f0f0;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 3px;
+    position: relative;
+    display: none;
+    
+}
+#intro .cuadro-pp1 .logo-pp1-item
+{
+    text-align: center;
+
+}
+#intro .cuadro-pp1 .logo-pp1-item .logo-verde
+{
+    margin: 0;
+    padding: 0;
+}
+#intro .cuadro-pp1 .logo-pp1-item .logo-verde .img-logo-verde
+{
+    width: 20px;
+    height: auto;
+}
+#intro .cuadro-pp1 .logo-pp1-item, .texto-pp1-item
+{
+  
+    width: 45px;
+    height: 30px;
+    margin: 0 0 0 0;
+    padding: 7px 0 0 0;
+    float: left;
+    font-size: .8em;
+}
+
+#intro .innovation-lab-text
+{
+    font-family: 'verlagbold';
+    position: relative;
+    margin-top: -5px;
+    margin-left: 30px;
+}
+#intro .innovation-text, .lab-text
+{
+    display: inline-block;
+    font-size: .45em;
+}
+#intro .lab-text
+{
+    padding: 0 0 0 .5em;
+    color: #0ad1be;
+}
+#intro .intro-copy
+{
+    margin-top: 1em;
+    padding-bottom: 50px;
+}
+#intro .intro-copy .texto 
+{
+    margin-top: .5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: center;
+    font-size: .5em;
+}
+#intro .intro-copy .seguir-box
+{
+    width: 172px;
+    height: 36px;
+    border: 3px solid #f0f0f0;
+    text-align: center;
+    padding-top: 12px;
+    margin: 25px auto 25px auto;
+}
+/* ------------------------------------------------------- */
+
+#logo
+{
+    background: #f0f0f0;
+
+    color: #444444;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+#logo .logo-box
+{
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 55px;  
+    width: 130px;
+    margin: 0 auto;
+}
+#logo .logo-box .logo-figure .logo-img
+{
+    content:url("../img/LOGO_210.png");
+    width: 130px;
+}
+/* ------------------------------------------------------- */
+
+#quienes-somos
+{
+    background: #0ad1be;
+    
+    color: #f0f0f0;
+}
+#quienes-somos .intro-copy
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#quienes-somos .intro-copy .texto 
+{
+
+    margin-top: .5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: center;
+    font-size: .5em;
+
+}
+#quienes-somos .intro-copy .seguir-box
+{
+    width: 172px;
+    height: 36px;
+    border: 3px solid #f0f0f0;
+    text-align: center;
+    padding-top: 12px;
+    margin: 50px auto 50px auto;
+}
+
+/* ------------------------------------------------------- */
+#servicios
+{
+    overflow: hidden;
+    background: white;
+    clear: both;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#servicios .servicios-container
+{
+    margin: 0 auto;
+    width: 320px;
+    padding-bottom: 20px;
+}
+#servicios .servicios-container .servicios-container-boxes
+{
+    
+    display: box;
+    box-orient: horizontal;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+}
+#servicios .servicios-container .servicios-container-boxes > div
+{
+    box-flex: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item
+{
+    margin: 8px;
+    width: 145px;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item
+{
+    text-align: center;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item figure 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item .imagen-item
+{
+    width: 70px;
+    height: 70px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .titulo-item
+{
+    background: #0ad1be;
+    color: white;
+    height: 1.8em;
+    text-align: center;
+    padding-top: .45em;
+    font-size: .7em;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
+{
+    background: black;
+    height: 130px;
+    text-align: center;
+    padding: 5%;
+    display: none;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item .parrafo
+{
+    color: white;
+    font-family: 'verlagbook';
+    font-size: .8em;
+ }
+ 
+ /* ------------------------------------------------------- */
+
+#makers
+{
+    overflow: hidden;
+    background: white;
+    clear: both;
+    position: relative;
+}
+#makers .makers-img
+{
+    width: 100%
+}
+/* ------------------------------------------------------- */
+
+#innovation-lab 
+{
+    background: #222222;
+    color: white;
+    clear: both;
+    position: relative;
+}
+
+#innovation-lab .intro-copy
+{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+#innovation-lab .intro-copy .iconos
+{
+    width: 105px;
+    margin: 0 auto; /* Centrado */
+    padding-bottom: 50px;
+}
+#innovation-lab .intro-copy .iconos .icono-fig-item
+{
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    float: left;
+}
+#innovation-lab .intro-copy .iconos .icono-fig-item .icono-img-item
+{
+    width: 25px;
+    height: 25px;
+}
+
+#innovation-lab .intro-copy .texto 
+{
+    clear: both;
+    margin-top: .5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: center;
+    font-size: .45em;
+}
+/* ------------------------------------------------------- */
+
+#conoce-mas
+{
+    overflow: hidden;
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#conoce-mas .conoce-mas-container
+{
+    overflow: hidden;
+    padding: 10px;
+
+    display: box;
+    box-orient: horizontal;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+
+    margin: 0 auto;
+    width: 320px;
+}
+#conoce-mas .conoce-mas-container > div
+{
+    box-flex: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+}
+
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item
+{
+    margin: 5px;
+    text-align: center;   
+    position: relative;
+
+    width: 140px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item figure
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-titulo
+{
+    width: 140px;
+    margin: 0 auto;
+    font-family: 'verlagbold';
+    color: white;
+    font-size: 1.8em;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1
+{
+    border-radius: 50%;
+    width: 100px;
+    -webkit-transition: .5s;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2
+{
+    border-radius: 50%;
+    width: 100px;
+    -webkit-transition: .5s;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3
+{
+    border-radius: 50%;
+    width: 100px;
+    -webkit-transition: .5s;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4
+{
+    
+    border-radius: 50%;
+    -webkit-transition: .5s;
+    
+    width: 100px;
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1:hover
+{
+    content:url("../img/wearabletech_activo.jpg");
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2:hover
+{
+    content:url("../img/internetofthings_activo.jpg");
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3:hover
+{
+    content:url("../img/sharingeconomy_activo.jpg");
+}
+#conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4:hover
+{
+    content:url("../img/makermovement_activo.jpg");
+}
+
+/* ------------------------------------------------------- */
+
+#nuestro-equipo
+{
+    background: #0ad1be;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+#nuestro-equipo .titulo
+{
+    padding-top: 30px;
+}
+/* ------------CAJAS FLEXIBLES------------------
+#nuestro-equipo .equipo-container
+{
+    border: 10px solid blue;
+    margin: 5px;
+
+    display: box;
+    box-orient: horizontal;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+}
+#nuestro-equipo .equipo-container > div
+{
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+
+}
+#nuestro-equipo .equipo-container .persona-item
+{
+    background: gray;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+ */
+ #nuestro-equipo .equipo-container
+{
+    
+    color: white;
+
+    display: box;
+    box-orient: vertical;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    display: -moz-box;
+    -moz-box-orient: vertical;
+
+    padding-top: 20px;
+
+}
+#nuestro-equipo .equipo-container > div
+{
+    box-flex: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+
+}
+#nuestro-equipo .equipo-container .persona-item
+{
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+
+}
+#nuestro-equipo .equipo-container .persona-item .persona-foto-item .img-item
+{
+    width: 100px;
+    height: 100px;
+}
+#nuestro-equipo .equipo-container .persona-item .persona-puesto-item
+{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0 auto;
+    width: 185px;
+    font-size: .8em;
+}
+#nuestro-equipo .equipo-container .persona-item .persona-desc-item
+{
+    width: 150px;
+    display: none;
+    margin: 0 auto;
+}
+/* ------------------------------------------------------- */
+
+#contacto
+{
+   
+    background: white;
+    background: url(../img/contacto_640.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#contacto .contacto-container
+{
+    margin: 0;
+    padding: 0;
+}
+#contacto .contacto-container .contacto-icono-box
+{
+    padding-top: 3px;
+}
+#contacto .contacto-container .contacto-icono-box .icon-uniE600
+{
+    font-size: 3em;
+    color: white;
+}
+#contacto .contacto-container .contacto-box
+{
+
+    width: 100px;
+    height: 30px;
+    border: 3px solid #f0f0f0;
+    padding-top: 6px;
+    margin: 0 auto;
+}
+/* ------------------------------------------------------- */
+@media screen and (min-width: 321px){
+    #logo .logo-box
+    {
+        width: 320px;
+        margin: 0 auto;
+    }
+    #logo .logo-box .logo-figure .logo-img
+    {
+        content:url("../img/LOGO_320.png");
+    }
+    #contacto
+    {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+@media screen and (min-width: 640px){
+    h1, h2
+    {
+        font-size: 1.8em;
+    }
+    .menu-fijo {
+        width: 97%;
+    }
+    #menu-header-smart
+    {
+        display: none;
+    }
+    #menu-header
+    {
+        display: block;
+    }
+    #intro .cuadro-pp1
+    {
+        margin-top: 45px;
+    }  
+    #intro .intro-copy .texto 
+    {
+        font-size: 1em;
+    }
+    #logo .logo-box
+    {
+        padding-top: 70px;
+        padding-bottom: 70px; 
+        width: 150px;
+    }
+    #logo .logo-box .logo-figure .logo-img
+    {
+        width: 150px;
+    }
+    #quienes-somos .intro-copy
+    {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    #quienes-somos .intro-copy .texto 
+    {
+        font-size: 1em;
+    }
+    #servicios .servicios-container
+    {   
+        display: box;
+        box-orient: horizontal;
+
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+
+        display: -moz-box;
+        -moz-box-orient: horizontal;
+
+        margin: 0 auto;
+        width: 640px;
+    }
+    #innovation-lab .intro-copy .texto 
+    {
+        font-size: .9em;
+    }
+    #makers .makers-img
+    {
+        content:url("../img/MAKERS_640.jpg");
+    }
+    #innovation-lab .intro-copy
+    {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    #conoce-mas .conoce-mas-container
+    {
+        width: 640px;
+        padding-top: 40px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container
+    {
+        display: box;
+        box-orient: horizontal;
+
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+
+        display: -moz-box;
+        -moz-box-orient: horizontal;
+    }
+
+     #nuestro-equipo .equipo-container
+    {
+        display: box;
+        box-orient: horizontal;
+
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+
+        display: -moz-box;
+        -moz-box-orient: horizontal;
+
+        width: 615px;
+        margin: 0 auto;
+        padding-top: 40px;
+      
+    }
+    #contacto
+    {
+        background: url(../img/contacto_640.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #contacto .contacto-container .contacto-icono-box .icon-uniE600
+    {
+        font-size: 7em;
+    }
+}
+@media screen and (min-width: 800px){
+    #intro .intro-copy
+    {
+        padding-bottom: 80px;
+    }
+    #logo .logo-box
+    {
+        padding-top: 100px;
+        padding-bottom: 100px; 
+    }
+    #quienes-somos .intro-copy
+    {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
+    {
+        display: block;
+    }
+    #makers .makers-img
+    {
+        content:url("../img/MAKERS_800.jpg");
+    }
+    #innovation-lab .intro-copy
+    {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #conoce-mas .conoce-mas-container
+    {
+        width: 800px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item
+    {
+        width: 180px;
+        margin: 10px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1
+    {
+        width: 134px;
+        padding: 20px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2
+    {
+        width: 134px;
+        padding: 20px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3
+    {
+        width: 134px;
+        padding: 20px;
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4
+    {
+        width: 134px;
+        padding: 20px;
+    }
+    #nuestro-equipo .equipo-container .persona-item .persona-desc-item
+    {
+        display: block;
+    }
+    #contacto
+    {
+        background: url(../img/contacto_800.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+@media screen and (min-width: 1024px){
+    /*
+    #intro
+    {
+        background: url(../img/INICIO_1024.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #201f1b;
+    } */   
+    #intro .cuadro-pp1-small
+    {
+        display: none;
+    }
+    #intro .cuadro-pp1
+    {
+        display: block;
+    }
+    #intro .innovation-text, .lab-text
+    {
+        font-size: .7em;
+    }
+    #intro .intro-copy
+    {
+        margin-top: 0;
+    }
+    #intro .intro-copy .texto 
+    {
+        font-size: 1.2em;
+    }
+    #logo .logo-box
+    {
+        padding-top: 120px;
+        padding-bottom: 120px; 
+        width: 190px;
+    }
+    #logo .logo-box .logo-figure .logo-img
+    {
+        width: 190px;
+    }
+    #quienes-somos .intro-copy
+    {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    #innovation-lab .intro-copy
+    {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    #quienes-somos .intro-copy .texto 
+    {
+        font-size: 1.2em;
+    }
+    #innovation-lab .intro-copy .texto 
+    {
+        font-size: 1.1em;
+    }
+    #innovation-lab .intro-copy .iconos
+    {
+        width: 180px;
+        padding-bottom: 100px;
+    }
+    #innovation-lab .intro-copy .iconos .icono-fig-item .icono-img-item
+    {
+        width: 50px;
+        height: 50px;
+    }
+    #makers .makers-img
+    {
+        content:url("../img/MAKERS_1024.jpg");
+    }
+    #contacto
+    {
+        background: url(../img/contacto_1024.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+@media screen and (min-width: 1278px){
+    #intro .intro-copy .texto 
+    {
+        font-size: 1.3em;
+    }
+    /*
+    #intro
+    {
+        background: url(../img/INICIO_1280.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #201f1b;
+      
+    }    */
+    #makers .makers-img
+    {
+        content:url("../img/MAKERS_1280.jpg");
+    }
+    #contacto
+    {
+        background: url(../img/contacto_1280.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}

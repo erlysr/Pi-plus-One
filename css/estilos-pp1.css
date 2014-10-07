@@ -122,6 +122,7 @@ body
     overflow: hidden;
 
     display: none;
+    z-index: 3;
 }
 #menu-botones .boton-pp1
 {
@@ -163,7 +164,18 @@ body
     display: none;
     float: left;
 }
-
+#submenu-servicios, #submenu-innovacion
+{
+    list-style-type: none;
+    padding-left: 20px;
+    display: none;
+}
+#submenu-servicios .opcion-submenu, #submenu-innovacion .opcion-submenu
+{
+    display: block;
+    width: 160px;
+    clear: both;
+}
 .menu-fijo {
     position: fixed;
     top: 0;

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos-pp1.css">
 	<script type="text/javascript" src="css/jquery.js"></script>
+
 	<script type="text/javascript">
 	  $(document).ready(function() {
 		  var menu = $('#menu-botones');
@@ -27,6 +28,7 @@
 		  });
 		});
 	  </script>
+	  <!-- funcion para desplazarse a la seccion indicada -->
 	  <script type="text/javascript">
 	  $(function(){
 
@@ -55,6 +57,7 @@
 
 	  });
 	  </script> 
+	  <!-- Funcion para desplegar submenu -->
 	  <script type="text/javascript">
 	  	function muestra_oculta(id) 
 	  	{
@@ -66,6 +69,8 @@
 		}
 		window.onload = function(){
    			muestra_oculta('submenu');
+   			muestra_oculta('submenu-servicios');
+   			muestra_oculta('submenu-innovacion');
 		}
 	  </script>
 <!--
@@ -125,16 +130,47 @@
 					<a href="http://www.piplusone.mx">PI.PLUS.ONE</a>
 				</li>
 				<li class="boton-derecha">
-					<a class="contacto-link" href="#contacto">INNOVACIÓN</a>
+					<a onclick="muestra_oculta('submenu-innovacion')" href="#">INNOVACIÓN</a>
+						<ul id="submenu-innovacion">
+							<li class="opcion-submenu">
+								<a href="html/impresion-3d.html" onclick="muestra_oculta('submenu-servicios')">IMPRESIÓN 3D</a>
+							</li>
+							<li class="opcion-submenu">
+								<a href="html/tecnologia-portable.html" onclick="muestra_oculta('submenu-servicios')">TECNOLOGÍA PORTABLE</a>
+							</li>
+							<li class="opcion-submenu">
+								<a href="html/internet.html" onclick="muestra_oculta('submenu-servicios')">INTERNET DE LAS COSAS</a>
+							</li>
+							<li class="opcion-submenu">
+								<a href="html/economia-colaborativa.html" onclick="muestra_oculta('submenu-servicios')">ECONOMÍA COLABORATIVA</a>
+							</li>
+							<li class="opcion-submenu">
+								<a href="html/drones-industrias.html" onclick="muestra_oculta('submenu-servicios')">DRONES PARA INDUSTRIAS</a>
+							</li>
+						</ul>
 				</li>
 				<li>
-					<a class="boton-servicios" href="#servicios">SERVICIOS</a>
+					<a onclick="muestra_oculta('submenu-servicios')" href="#">SERVICIOS</a>
+						<ul id="submenu-servicios">
+							<li class="opcion-submenu">
+								<a href="html/futuristic-scenarios.html" onclick="muestra_oculta('submenu-servicios')">FUTURISTIC SCENARIOS</a>
+							</li>
+							<li class="opcion-submenu">
+								<a href="html/maker-movement.html" onclick="muestra_oculta('submenu-servicios')">MAKER MOVEMENT</a>
+							</li>
+							<li class="opcion-submenu">
+								<a href="html/inhouse-platform.html" onclick="muestra_oculta('submenu-servicios')">IN-HOUSE PLATFORM</a>
+							</li>
+							<li class="opcion-submenu">
+								<a href="html/trend-benchmarking.html" onclick="muestra_oculta('submenu-servicios')">TREND & BENCHMARKING</a>
+							</li>
+						</ul> 
 				</li>
-				<li>
+			<!--	<li>
 					<a href="#quienes-somos">LAB.</a>
-				</li>
+				</li> -->
 				<li>
-					<a href="#intro">ACERCA DE</a>
+					<a href="index.html">HOME</a>
 				</li>
 			</ul>
 		</nav>
@@ -146,13 +182,13 @@
 							<a href="http://www.piplusone.mx">PI.PLUS.ONE</a>
 						</li>
 						<li>
-							<a href="#quienes-somos" onclick="muestra_oculta('submenu')">ACERCA DE</a>
+							<a href="index.html" onclick="muestra_oculta('submenu')">HOME</a>
 						</li>
 						<li>
-							<a class="boton-servicios" href="#servicios" onclick="muestra_oculta('submenu')">LAB.</a>
+							<a href="#servicios" onclick="muestra_oculta('submenu')">SERVICIOS</a>
 						</li>
 						<li class="boton-derecha">
-							<a href="#contacto" onclick="muestra_oculta('submenu')">INNOVACIÓN</a>
+							<a href="#conoce-mas" onclick="muestra_oculta('submenu')">INNOVACIÓN</a>
 						</li>
 					</ul> 
 		</nav>
@@ -168,7 +204,7 @@
 			<p class="texto">THINKERS, MAKERS Y ENTREPRENEURS CREANDO SOLUCIONES</p>
 			<p class="texto">A PROBLEMÁTICAS REALES A TRAVÉS DE LA INNOVACIÓN, LA TECNOLOGÍA Y LA CREATIVIDAD.</p>
 			<div class="seguir-box">
-				<a href="#">BIENVENIDO AL MAKER MOVEMENT</a>
+				<a href="html/maker-movement.html">BIENVENIDO AL MAKER MOVEMENT</a>
 			</div> 
 		</div>
 	</section>
@@ -213,12 +249,14 @@
 			<div class="servicios-container-boxes">
 				<div class="servicio-box-item">
 					<div class="icono-item">
-						<figure>
-							<img class="imagen-item" src="img/SERVICIOS_1_320.jpg"></img>
-						</figure>
+						<a href="html/futuristic-scenarios.html">
+							<figure>
+								<img class="imagen-item" src="img/SERVICIOS_1_320.jpg"></img>
+							</figure>
+						</a>
 					</div>
-					<div class="titulo-item">
-						FUTURISTIC SCENARIOS
+					<div class="titulo-item"><a href="html/futuristic-scenarios.html">
+						FUTURISTIC SCENARIOS</a>
 					</div>
 					<div class="texto-item">
 						<p class="parrafo">
@@ -228,12 +266,14 @@
 				</div>
 				<div class="servicio-box-item">
 					<div class="icono-item">
-						<figure>
-							<img class="imagen-item" src="img/SERVICIOS_2_320.jpg"></img>
-						</figure>
+						<a href="html/maker-movement.html">
+							<figure>
+								<img class="imagen-item" src="img/SERVICIOS_2_320.jpg"></img>
+							</figure>
+						</a>
 					</div>
-					<div class="titulo-item">
-						MAKER MOVEMENT
+					<div class="titulo-item"><a href="html/maker-movement.html">
+						MAKER MOVEMENT</a>
 					</div>
 					<div class="texto-item">
 						<p class="parrafo">
@@ -245,12 +285,14 @@
 			<div class="servicios-container-boxes">
 				<div class="servicio-box-item">
 					<div class="icono-item">
-						<figure>
-							<img class="imagen-item" src="img/SERVICIOS_3_320.jpg"></img>
-						</figure>
+						<a href="html/inhouse-platform.html">
+							<figure>
+								<img class="imagen-item" src="img/SERVICIOS_3_320.jpg"></img>
+							</figure>
+						</a>
 					</div>
-					<div class="titulo-item">
-						IN-HOUSE PLATFORM
+					<div class="titulo-item"><a href="html/inhouse-platform.html">
+						IN-HOUSE PLATFORM</a>
 					</div>
 					<div class="texto-item">
 						<p class="parrafo">
@@ -260,12 +302,14 @@
 				</div>
 				<div class="servicio-box-item">
 					<div class="icono-item">
-						<figure>
-							<img class="imagen-item" src="img/SERVICIOS_4	_320.jpg"></img>
-						</figure>
+						<a href="html/trend-benchmarking.html">
+							<figure>
+								<img class="imagen-item" src="img/SERVICIOS_4	_320.jpg"></img>
+							</figure>
+						</a>
 					</div>
-					<div class="titulo-item">
-						TREND & BENCHMARKING
+					<div class="titulo-item"><a href="html/trend-benchmarking.html">
+						TREND & BENCHMARKING</a>
 					</div>
 					<div class="texto-item">
 						<p class="parrafo">
@@ -279,19 +323,26 @@
 <!-- *********************************************************** -->
 	<section id="servicios-1024">
 		<div class="container">
-			<figure class="futuristic-img">
-					<img src="img-v1/futuristic_desactivado.jpg"></img>
-			</figure>
-			<figure class="makermovement-img">
-					<img src="img-v1/makermovement_desactivado.jpg"></img>
-			</figure>
-			<figure class="inhouse-img">
-					<img src="img-v1/inhouse_desactivado.jpg"></img>
-			</figure>
-			<figure class="trend-img">
-					<img src="img-v1/trend_desactivado.jpg"></img>
-			</figure>
-
+			<a href="html/futuristic-scenarios.html">
+				<figure class="futuristic-img">
+						<img src="img-v1/futuristic_desactivado.jpg"></img>
+				</figure>
+			</a>
+			<a href="html/maker-movement.html">
+				<figure class="makermovement-img">
+						<img src="img-v1/makermovement_desactivado.jpg"></img>
+				</figure>
+			</a>
+			<a href="html/inhouse-platform.html">
+				<figure class="inhouse-img">
+						<img src="img-v1/inhouse_desactivado.jpg"></img>
+				</figure>
+			</a>
+			<a href="html/trend-benchmarking.html">
+				<figure class="trend-img">
+						<img src="img-v1/trend_desactivado.jpg"></img>
+				</figure>
+			</a>
 			<div class="container-fondo">
 
 				<div class="fondo">
@@ -339,43 +390,46 @@
 			<div class="temas-container">
 				
 					<div class="tema-circulo-item">
-						<figure>
-							<img class="tema-circulo-img-item1" src="img-v1/3dprinting.jpg"></img>
-						</figure>
-
+						<a href="html/impresion-3d.html">
+							<figure>
+								<img class="tema-circulo-img-item1" src="img-v1/3dprinting.jpg"></img>
+							</figure>
+						</a>
 					</div>
-
-				
 					<div class="tema-circulo-item">
-						<figure>
-							<img class="tema-circulo-img-item2" src="img-v1/wearable.jpg"></img>
-						</figure>
-
+						<a href="html/wearable-technology.html">
+							<figure>
+								<img class="tema-circulo-img-item2" src="img-v1/wearable.jpg"></img>
+							</figure>
+						</a>
 					</div>
 			
 			</div>
 			<div class="temas-container">
 				
 					<div class="tema-circulo-item">
-						<figure>
-							<img class="tema-circulo-img-item3" src="img-v1/internetcosas.jpg"></img>
-						</figure>
-
+						<a href="html/internet.html">
+							<figure>
+								<img class="tema-circulo-img-item3" src="img-v1/internetcosas.jpg"></img>
+							</figure>
+						</a>
 					</div>
-
 					<div class="tema-circulo-item">
-						<figure>
-							<img class="tema-circulo-img-item4" src="img-v1/economia.jpg"></img>
-						</figure>
+						<a href="html/economia-colaborativa.html">
+							<figure>
+								<img class="tema-circulo-img-item4" src="img-v1/economia.jpg"></img>
+							</figure>
+						</a>
 					</div>
 			</div>
 			<div class="temas-container">
 				
 					<div class="tema-circulo-item">
-						<figure>
-							<img class="tema-circulo-img-item5" src="img-v1/drones.jpg"></img>
-						</figure>
-
+						<a href="html/drones-industrias.html">
+							<figure>
+								<img class="tema-circulo-img-item5" src="img-v1/drones.jpg"></img>
+							</figure>
+						</a>
 					</div>
 <!--
 					<div class="tema-circulo-item">
@@ -441,7 +495,7 @@
 	<section id="contacto">
 		<div class="contacto-container">
 			<div class="contacto-icono-box">
-				<a class="icon-uniE600" href="mailto:contacto@pp1.mx?Subject=Contacto PiPlusOne%20again" target="_top"></a>
+				<a class="icon-uniE600" href="mailto:contacto@piplusone.mx?Subject=Contacto PiPlusOne%20again" target="_top"></a>
 			</div>
 			<!--
 			<div class="contacto-box">

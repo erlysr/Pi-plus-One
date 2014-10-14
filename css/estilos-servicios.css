@@ -65,15 +65,16 @@ header
 }
 #body-pag
 {
-    background: white;
+    background: black;
     font-family: 'verlagbook';
     font-size: 12px;
     color: #444444;
     min-width: 320px;
 }
+
 #contenido
 {
-
+ background: white;
 }
 #contenido .contenido-container
 {
@@ -227,6 +228,106 @@ header
     float: left;
     padding-top: 20px;
 }
+
+/********************** PAGINA "THE MAKER MOVEMENT" *************************/
+#contenido-makers
+{
+    position: relative;
+    background: white;
+    font-family:  "verlagblack";
+    font-size: 1.8em;
+}
+#contenido-makers .makers-intro
+{
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 1024px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+#contenido-makers .makers-intro .makers-intro-subtitulo
+{
+    text-align: center;    
+}
+#contenido-makers .makers-intro .makers-intro-text
+{
+    text-align: center;
+}
+#contenido-makers .makers-identifica
+{
+    position: relative;
+}
+#contenido-makers .makers-identifica .banner-fig
+{
+
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+}
+#contenido-makers .makers-identifica .makers-identifica-text
+{
+    color: white;
+    text-align: center;
+    top: 220px;
+    left: 130px;
+    z-index: 3;
+    position: absolute;
+    width: 1000px;
+}
+#contenido-makers .makers-identifica .subtitulo
+{
+    font-family: "verlagblack";
+    line-height: 4em;
+}
+#contenido-makers .makers-identifica .full-text
+{
+    font-family: "verlagbook";
+    line-height: 1.8em;
+}
+#contenido-makers .makers-que-dicen
+{
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 1024px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+#contenido-makers .makers-que-dicen .makers-intro-subtitulo
+{
+    text-align: center; 
+    line-height: 4em;   
+}
+#contenido-makers .makers-que-dicen .makers-intro-text
+{
+    text-align: center;
+    font-family: "verlagbook"
+}
+#contenido-makers .makers-que-dicen .makers-intro-subtitulo-left
+{
+    text-align: left; 
+    line-height: 4em;   
+}
+#contenido-makers .makers-que-dicen .makers-intro-text-left
+{
+    text-align: left;
+    font-family: "verlagbook";
+
+}
+#contenido-makers .makers-que-dicen .foot-text
+{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 1024px;
+}
+footer
+{
+    background: white;
+    padding-top: 50px;
+}
 footer .footer-container
 {
     clear: both;
@@ -239,6 +340,7 @@ footer .footer-container .correo-contacto
 {
     font-size: 1em;
     color: #c6c6c6;
+
 }
 /* ------------------------------------------------------- */
 @media screen and (min-width: 321px){
@@ -251,8 +353,8 @@ footer .footer-container .correo-contacto
  
 }
 @media screen and (min-width: 1024px){
- 
+
 }
 @media screen and (min-width: 1278px){
- 
+  
 }

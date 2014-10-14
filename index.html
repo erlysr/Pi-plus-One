@@ -69,106 +69,20 @@
 		}
 		window.onload = function(){
    			muestra_oculta('submenu');
-   			muestra_oculta('submenu-servicios');
-   			muestra_oculta('submenu-innovacion');
 		}
 	  </script>
-<!--
-	  <script type="text/javascript">
-	  $(document).ready(function() {
-		  var menu = $('#submenu');
-		  var contenedor = $('#menu-header-smart');
-		  var cont_offset = contenedor.offset();
-		  // Cada vez que se haga scroll en la página
-		  // haremos un chequeo del estado del menú
-		  // y lo vamos a alternar entre 'fixed' y 'static'.
-
-		  $(window).on('scroll', function() {
-		  	 //alert($(window).scrollTop());
-		    if($(window).scrollTop() > cont_offset.top) {
-		      menu.addClass('menu-fijo');
-		    } else {
-		      menu.removeClass('menu-fijo');
-		    }
-		  });
-		});
-	  </script>
-	  <script type="text/javascript">
-	  $(function(){
-
-     	$('a[href*=#]').click(function() {
-
-     		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-         		&& location.hostname == this.hostname) {
-
-             		var $target = $(this.hash);
-
-             		$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
-             		if ($target.length) {
-
-                 		var targetOffset = $target.offset().top;
-
-                 		$('html,body').animate({scrollTop: targetOffset}, 1000);
-
-                 		return false;
-
-            		}
-
-       			}
-
-   		});
-
-	  });
-	  </script> -->
 </head>
 <body>
 	<header>
 		<nav id="menu-header">
 			<ul id="menu-botones">
-				<li class="boton-pp1">
-					<a href="http://www.piplusone.mx">PI.PLUS.ONE</a>
-				</li>
 				<li class="boton-derecha">
-					<a onclick="muestra_oculta('submenu-innovacion')" href="#">INNOVACIÓN</a>
-						<ul id="submenu-innovacion">
-							<li class="opcion-submenu">
-								<a href="html/impresion-3d.html" onclick="muestra_oculta('submenu-servicios')">IMPRESIÓN 3D</a>
-							</li>
-							<li class="opcion-submenu">
-								<a href="html/tecnologia-portable.html" onclick="muestra_oculta('submenu-servicios')">TECNOLOGÍA PORTABLE</a>
-							</li>
-							<li class="opcion-submenu">
-								<a href="html/internet.html" onclick="muestra_oculta('submenu-servicios')">INTERNET DE LAS COSAS</a>
-							</li>
-							<li class="opcion-submenu">
-								<a href="html/economia-colaborativa.html" onclick="muestra_oculta('submenu-servicios')">ECONOMÍA COLABORATIVA</a>
-							</li>
-							<li class="opcion-submenu">
-								<a href="html/drones-industrias.html" onclick="muestra_oculta('submenu-servicios')">DRONES PARA INDUSTRIAS</a>
-							</li>
-						</ul>
+					<a href="#conoce-mas">INNOVACIÓN</a>
 				</li>
 				<li>
-					<a onclick="muestra_oculta('submenu-servicios')" href="#">SERVICIOS</a>
-						<ul id="submenu-servicios">
-							<li class="opcion-submenu">
-								<a href="html/futuristic-scenarios.html" onclick="muestra_oculta('submenu-servicios')">FUTURISTIC SCENARIOS</a>
-							</li>
-							<li class="opcion-submenu">
-								<a href="html/maker-movement.html" onclick="muestra_oculta('submenu-servicios')">MAKER MOVEMENT</a>
-							</li>
-							<li class="opcion-submenu">
-								<a href="html/inhouse-platform.html" onclick="muestra_oculta('submenu-servicios')">IN-HOUSE PLATFORM</a>
-							</li>
-							<li class="opcion-submenu">
-								<a href="html/trend-benchmarking.html" onclick="muestra_oculta('submenu-servicios')">TREND & BENCHMARKING</a>
-							</li>
-						</ul> 
+					<a href="#servicios-1024">SERVICIOS</a>
+
 				</li>
-			<!--	<li>
-					<a href="#quienes-somos">LAB.</a>
-				</li> -->
 				<li>
 					<a href="index.html">HOME</a>
 				</li>
@@ -178,14 +92,11 @@
 		<nav id="menu-header-smart">
 			<a class="icon-list" onclick="muestra_oculta('submenu')" href="#"></a>
 					<ul id="submenu">
-						<li class="boton-pp1">
-							<a href="http://www.piplusone.mx">PI.PLUS.ONE</a>
-						</li>
 						<li>
 							<a href="index.html" onclick="muestra_oculta('submenu')">HOME</a>
 						</li>
 						<li>
-							<a href="#servicios" onclick="muestra_oculta('submenu')">SERVICIOS</a>
+							<a href="#servicios-low-res" onclick="muestra_oculta('submenu')">SERVICIOS</a>
 						</li>
 						<li class="boton-derecha">
 							<a href="#conoce-mas" onclick="muestra_oculta('submenu')">INNOVACIÓN</a>
@@ -204,7 +115,7 @@
 			<p class="texto">THINKERS, MAKERS Y ENTREPRENEURS CREANDO SOLUCIONES</p>
 			<p class="texto">A PROBLEMÁTICAS REALES A TRAVÉS DE LA INNOVACIÓN, LA TECNOLOGÍA Y LA CREATIVIDAD.</p>
 			<div class="seguir-box">
-				<a href="html/maker-movement.html">BIENVENIDO AL MAKER MOVEMENT</a>
+				<a href="html/the-maker-movement.html">BIENVENIDO AL MAKER MOVEMENT</a>
 			</div> 
 		</div>
 	</section>
@@ -241,85 +152,33 @@
 			</div> -->
 		</div>
 	</section>
-
 <!-- *********************************************************** -->
-	<section id="servicios">
-		<h1>SERVICIOS</h1>
-		<div class="servicios-container">
-			<div class="servicios-container-boxes">
-				<div class="servicio-box-item">
-					<div class="icono-item">
-						<a href="html/futuristic-scenarios.html">
-							<figure>
-								<img class="imagen-item" src="img/SERVICIOS_1_320.jpg"></img>
-							</figure>
-						</a>
-					</div>
-					<div class="titulo-item"><a href="html/futuristic-scenarios.html">
-						FUTURISTIC SCENARIOS</a>
-					</div>
-					<div class="texto-item">
-						<p class="parrafo">
-							Contamos historias del futuro y como las marcas encajan en ellas.
-						</p>
-					</div>
-				</div>
-				<div class="servicio-box-item">
-					<div class="icono-item">
-						<a href="html/maker-movement.html">
-							<figure>
-								<img class="imagen-item" src="img/SERVICIOS_2_320.jpg"></img>
-							</figure>
-						</a>
-					</div>
-					<div class="titulo-item"><a href="html/maker-movement.html">
-						MAKER MOVEMENT</a>
-					</div>
-					<div class="texto-item">
-						<p class="parrafo">
-							Te acercamos a una red de "thinkers", "makers" y "entrepreneurs", cada uno con experiencias y conocimientos tangibles en temas de Innovación y tecnología aplicables para tu empresa.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="servicios-container-boxes">
-				<div class="servicio-box-item">
-					<div class="icono-item">
-						<a href="html/inhouse-platform.html">
-							<figure>
-								<img class="imagen-item" src="img/SERVICIOS_3_320.jpg"></img>
-							</figure>
-						</a>
-					</div>
-					<div class="titulo-item"><a href="html/inhouse-platform.html">
-						IN-HOUSE PLATFORM</a>
-					</div>
-					<div class="texto-item">
-						<p class="parrafo">
-							Desarrollamos plataformas on/off line que generan soluciones a problemáticas sociales de alto impacto a través de la tecnología, la creatividad y la innovación, conoce como tu marca puede interactuar con nuevas plataformas.
-						</p>
-					</div>
-				</div>
-				<div class="servicio-box-item">
-					<div class="icono-item">
-						<a href="html/trend-benchmarking.html">
-							<figure>
-								<img class="imagen-item" src="img/SERVICIOS_4	_320.jpg"></img>
-							</figure>
-						</a>
-					</div>
-					<div class="titulo-item"><a href="html/trend-benchmarking.html">
-						TREND & BENCHMARKING</a>
-					</div>
-					<div class="texto-item">
-						<p class="parrafo">
-							Analizamos el mercado actual contra tendencias emergentes para identificar oportunidades de liderazgo para tu marca.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<section id="servicios-low-res">
+	<h1>SERVICIOS</h1>
+	<div class="botones-container">
+		<a href="html/futuristic-scenarios.html">
+			<figure class="botones-fig">
+						<img class="botones-img" src="img-v1/futuristic.jpg"></img>
+			</figure>
+		</a>
+		<a href="html/maker-movement.html">
+			<figure class="botones-fig">
+						<img class="botones-img" src="img-v1/maker.jpg"></img>
+			</figure>
+		</a>
+		<a href="html/inhouse-platform.html">
+			<figure class="botones-fig">
+						<img class="botones-img" src="img-v1/inhouse.jpg"></img>
+			</figure>
+		</a>
+		<a href="html/trend-benchmarking.html">
+			<figure class="botones-fig">
+						<img class="botones-img" src="img-v1/trend.jpg"></img>
+			</figure>
+		</a>
+	</div>
+</section>
+
 <!-- *********************************************************** -->
 	<section id="servicios-1024">
 		<div class="container">
@@ -397,7 +256,7 @@
 						</a>
 					</div>
 					<div class="tema-circulo-item">
-						<a href="html/wearable-technology.html">
+						<a href="html/tecnologia-portable.html">
 							<figure>
 								<img class="tema-circulo-img-item2" src="img-v1/wearable.jpg"></img>
 							</figure>
@@ -465,7 +324,7 @@
 			<div class="persona-item">
 				<div class="persona-foto-item">
 					<figure>
-						<img class="img-item" src="img/Alfil_100x100.png"></img>
+						<img class="img-item" src="img/alfil_100x100.png"></img>
 					</figure>
 				</div> 
 				<div class="persona-puesto-item">

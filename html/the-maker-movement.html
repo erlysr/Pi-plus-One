@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>	
+	<meta description="Pi+One, Innovation Lab - Servicios - Futuristic Scenarios"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> <!-- Es lo que se tiene que agregar para dispositivos moviles, responsive design -->
+	<title>Pi+One - Innovation Lab - Servicios - Futuristic Scenarios</title>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos-servicios.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos-pp1.css">
+	<script type="text/javascript" src="../css/jquery.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function() {
+		  var menu = $('#menu-botones');
+		  var contenedor = $('#menu-header');
+		  var cont_offset = contenedor.offset();
+		  // Cada vez que se haga scroll en la página
+		  // haremos un chequeo del estado del menú
+		  // y lo vamos a alternar entre 'fixed' y 'static'.
+
+		  $(window).on('scroll', function() {
+		  	 //alert($(window).scrollTop());
+		    if($(window).scrollTop() > cont_offset.top) {
+		      menu.addClass('menu-fijo');
+		    } else {
+		      menu.removeClass('menu-fijo');
+		    }
+		  });
+		});
+	  </script>
+
+	  <!-- Funcion para desplegar submenu -->
+	  <script type="text/javascript">
+	  	function muestra_oculta(id) 
+	  	{
+   			if (document.getElementById) 
+   			{
+      			var menu = document.getElementById(id);
+      			menu.style.display = (menu.style.display == 'none') ? 'block' : 'none';
+   			}
+		}
+		window.onload = function(){
+   			muestra_oculta('submenu');
+		}
+	  </script>
+
+</head>
+<body>
+	<header>
+		<nav id="menu-header">
+			<ul id="menu-botones">
+								<li class="boton-derecha">
+					<a href="../index.html#conoce-mas">INNOVACIÓN</a>
+				</li>
+				<li>
+					<a href="../index.html#servicios-1024">SERVICIOS</a>
+				</li>
+				<li>
+					<a href="../index.html">HOME</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<nav id="menu-header-smart">
+			<a class="icon-list" onclick="muestra_oculta('submenu')" href="#"></a>
+					<ul id="submenu">
+						<li>
+							<a href="../index.html" onclick="muestra_oculta('submenu')">HOME</a>
+						</li>
+						<li>
+							<a href="../index.html#servicios-low-res" onclick="muestra_oculta('submenu')">SERVICIOS</a>
+						</li>
+						<li class="boton-derecha">
+							<a href="../index.html#conoce-mas" onclick="muestra_oculta('submenu')">INNOVACIÓN</a>
+						</li>
+					</ul> 
+		</nav>
+	</header>
+<!-- *********************************************************** -->
+	<section id="banner" >
+		<div class="banner-container">
+			<figure class="banner-fig">
+					<img class="banner-img" src="../img-v1/themakermovement_low.jpg"/></img>
+			</figure>
+		</div>
+	</section>
+<!-- *********************************************************** -->
+
+	<section id="contenido-makers">
+		<div class="makers-intro">
+			<p class="makers-intro-text">
+				THE MAKER MOVEMENT: EL SER HUMANO SIEMPRE HA SENTIDO LA NECESIDAD DE CREAR, LA TECNOLOGÍA Y LAS DIVERSAS PLATAFORMAS DIGITALES HAN LOGRADO QUE LOS “MAKERS” LLEVEN SU IDEA A UN CONCEPTO Y DE UN CONCEPTO A UN PROTOTIPO TANGIBLE QUE APUESTA A LA MEJORA DE LA SOCIEDAD Y ECOSISTEMAS QUE LO RODEAN.
+			</p>
+		</div>
+		<div class="makers-identifica">
+			<figure class="banner-fig">
+					<img class="banner-img" src="../img-v1/imagen1.jpg"/></img>
+			</figure>
+			<div class="makers-identifica-text">
+				<p class="subtitulo">
+					¿CÓMO IDENTIFICAR A UN “MAKER”?
+				</p>
+				<p class="full-text">
+					ELLOS TRATAN DE ENTENDER AL MUNDO, DE INFORMARSE INTELIGENTEMENTE Y DE GENERAR EMPATÍA CON EL ENTORNO PARA CREAR SOLUCIONES A PROBLEMÁTICAS SOCIALES, A TRAVÉS DE PROYECTOS E IDEAS QUE SEAN REALMENTE RELEVANTES PARA LOS USUARIOS.
+				</p>
+			</div>	
+		</div>
+
+		<div class="makers-que-dicen">
+			<p class="makers-intro-subtitulo">
+				¿QUE DICEN LOS “MAKERS”?
+			</p>
+			<p class="makers-intro-text">
+				“TU PRODUCTO, SERVICIO, PLATAFORMA O APLICACIÓN TIENE QUE FUNCIONAR, TIENE QUE GENERAR VALOR AGREGADO A TUS CONSUMIDORES. AÚN ASÍ TODAVÍA FALTA UN PASO... TU PRODUCTO O SERVICIO TIENE QUE TRABAJAR DE LA MANO CON EL AMBIENTE/ECOSISTEMA, TIENES QUE BUSCAR REDUCIR LA COMPLEJIDAD Y POTENCIAR EL VALOR DE LAS COSAS QUE TE RODEAN.
+			</p>
+		</div>
+
+		<div class="makers-identifica">
+			<figure class="banner-fig">
+					<img class="banner-img" src="../img-v1/imagen2.jpg"/></img>
+			</figure>
+			<div class="makers-identifica-text">
+				<p class="subtitulo">
+					¿CÓMO LO HACEN?
+				</p>
+				<p class="full-text">
+					CON EL PODER DE LA ACCIÓN COLECTIVA, LAS REDES DE TRABAJO Y EL “CROWDSOURCING”, LA ACCIÓN INDIVIDUAL SE AMPLIFICA HASTA TENER UNA EXTRAORDINARIA INFLUENCIA SOBRE EL “SISTEMA” QUE NOS RIGE Y NOS RODEA. EMPIEZA EN UNA ESCALA DIMINUTA A TRAVÉS DE UNA PERSONA QUE BUSCA HACER QUE ALGO PASE, EL ÚNICO LÍMITE... ES LA IMAGINACIÓN.
+				</p>
+			</div>
+		</div>
+
+		<div class="makers-que-dicen">
+			<p class="makers-intro-subtitulo-left">
+				EN GENERAL, UN MAKER:
+			</p>
+			<ul class="makers-intro-text-left">
+				<li>
+					DEMOCRATIZA LA CREACIÓN DE ELEMENTOS Y PLATAFORMAS TECNOLÓGICAS Y MODELOS DE NEGOCIO DISRUPTIVOS A TRAVÉS DE LA INNOVACIÓN.
+				</li>
+				<li>
+					INTERCAMBIA Y ADQUIERE CONOCIMIENTO POR SI SOLO O CON INDIVIDUOS Y ORGANIZACIONES RELACIONADAS A SUS INTERESES.
+				</li>
+				<li>
+					INCREMENTA EL VALOR AGREGADO DE SUS IDEAS O PROYECTOS A TRAVÉS DE ALIANZAS ESTRATÉGICAS QUE INFLUYAN DE MANERA RELEVANTE EN LA SOCIEDAD.
+				</li>
+			</ul>
+			<p class="foot-text">BIENVENIDO AL MAKER MOVEMENT...</p>
+		</div>
+
+		<div class="makers-video">
+		</div>
+
+	</section>
+<!-- *********************************************************** -->
+	<footer>
+	</footer>
+
+</body>
+</html>

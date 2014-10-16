@@ -90,10 +90,6 @@ a
     color: #f0f0f0;
     text-decoration: none;
 }
-a:hover
-{
-    color: #0ad1be;
-}
 figure
 {
     padding: 0;
@@ -106,7 +102,6 @@ figure
 header
 {
     background: black;
-    position: relative;
 }
 body
 {
@@ -127,17 +122,6 @@ body
     overflow: hidden;
 
     display: none;
-    z-index: 3;
-}
-#menu-botones .liga-servicios-1024
-{
-    display: none;
-}
-#menu-botones li
-{
-    display: inline-block;
-    padding: 0 2em 0 0;
-    float: right;
 }
 #menu-botones .boton-pp1
 {
@@ -146,6 +130,12 @@ body
     position: absolute;
     top: .4em;
     left: 30px;
+}
+#menu-botones li
+{
+    display: inline-block;
+    padding: 0 2em 0 0;
+    float: right;
 }
 #menu-botones .boton-derecha
 {
@@ -158,42 +148,22 @@ body
     color: white;
 
     padding: .2em;
-
+    position: relative;
     overflow: hidden;
-    width: 100%;
-    height: 30px;
-}
-#menu-header-smart .boton-pp1
-{
-    font-family: 'verlagbold';
-    font-size: 1.2em;
-    position: absolute;
-    top: .4em;
-    left: 30px;
-    z-index: 3;
+    float: right;
 }
 #menu-header-smart .icon-list
 {
     font-size: 2em;
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    z-index: 3;
 }
 #submenu
 {
     list-style-type: none;
-    padding-right: 40px;
-    padding-left: 20px;
-    
+    padding-right: 20px;
     display: none;
-    position: absolute;
-    top: 30px;
-    right: 0px;
-    z-index: 3;
-    background: black;
-   text-align: left;
+    float: left;
 }
+
 .menu-fijo {
     position: fixed;
     top: 0;
@@ -218,15 +188,7 @@ h2
     font-size: 1.2em;
     text-align: center;
 }
-h3
-{
-    color: white;
-    font-family: 'verlagbook';
-    font-size: 4em;
-    text-align: center;
-    padding-top: 2em;
-    padding-bottom: 1.5em;
-}
+
 
 /* ------------------------------------------------------- */
 #intro
@@ -277,7 +239,6 @@ h3
     margin: 25px auto 25px auto;
     font-size: .9em;
 }
-
 /* ------------------------------------------------------- */
 
 #logo
@@ -338,7 +299,7 @@ h3
 }
 
 /* ------------------------------------------------------- */
-#servicios-1024, #servicios-low-res
+#servicios, #servicios-1024
 {
     overflow: hidden;
     background: white;
@@ -346,17 +307,6 @@ h3
     padding-top: 30px;
     padding-bottom: 30px;
     position: relative;
-}
-#servicios-low-res .botones-container
-{
-    margin: 10px auto;
-    width: 280px;
-}
-#servicios-low-res .botones-container .botones-fig .botones-img
-{
-    width: 280px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 #servicios-1024
 {
@@ -375,16 +325,10 @@ h3
     z-index: 1;
     left: 0;
     top: 55px;
-    display: block;
-    width: 933px;
-    height: 127px;
-    background-image: url('../img-v1/futuristic_hover.jpg');
-    background-repeat: no-repeat;
-    background-position: bottom left;
 }
 #servicios-1024 .container .futuristic-img:hover
 {
-        background-position: top right;
+    content:url("../img-v1/futuristic_activado.jpg");
 }
 #servicios-1024 .container .makermovement-img
 {
@@ -441,6 +385,80 @@ h3
 
 /* ------------------------------------------------------- */
 
+#servicios .servicios-container
+{
+    margin: 0 auto;
+    width: 320px;
+    padding-bottom: 20px;
+}
+#servicios .servicios-container .servicios-container-boxes
+{
+    
+    display: box;
+    box-orient: horizontal;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+}
+#servicios .servicios-container .servicios-container-boxes > div
+{
+    box-flex: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item
+{
+    margin: 8px;
+    width: 145px;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item
+{
+    text-align: center;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item figure 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .icono-item .imagen-item
+{
+    width: 70px;
+    height: 70px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .titulo-item
+{
+    background: #0ad1be;
+    color: white;
+    height: 1.8em;
+    text-align: center;
+    padding-top: .45em;
+    font-size: .7em;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
+{
+    background: black;
+    height: 130px;
+    text-align: center;
+    padding: 5%;
+    display: none;
+}
+#servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item .parrafo
+{
+    color: white;
+    font-family: 'verlagbook';
+    font-size: .8em;
+ }
+ /* ------------------------------------------------------- */
 
 #makers
 {
@@ -788,6 +806,20 @@ h3
     {
         font-size: 1em;
     }
+    #servicios .servicios-container
+    {   
+        display: box;
+        box-orient: horizontal;
+
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+
+        display: -moz-box;
+        -moz-box-orient: horizontal;
+
+        margin: 0 auto;
+        width: 640px;
+    }
     #makers .makers-img
     {
         content:url("../img/MAKERS_640.jpg");
@@ -860,6 +892,10 @@ h3
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    #servicios .servicios-container .servicios-container-boxes .servicio-box-item .texto-item
+    {
+        display: block;
+    }
     #makers .makers-img
     {
         content:url("../img/MAKERS_800.jpg");
@@ -911,7 +947,15 @@ h3
     }
 }
 @media screen and (min-width: 1024px){
-    h1, h2
+    /*
+    #intro
+    {
+        background: url(../img/INICIO_1024.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #201f1b;
+    } */  
+        h1, h2
     {
         font-size: 2.4em;
     } 
@@ -963,15 +1007,7 @@ h3
     {
         display: block;
     }
-    #servicios-low-res
-    {
-        display: none;
-    }
-    #menu-botones .liga-servicios-1024
-    {
-        display: block;
-    }
-    #menu-botones .liga-servicios-low-res
+    #servicios
     {
         display: none;
     }

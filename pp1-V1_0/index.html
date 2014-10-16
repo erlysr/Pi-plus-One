@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos-pp1.css">
 	<script type="text/javascript" src="css/jquery.js"></script>
-
 	<script type="text/javascript">
 	  $(document).ready(function() {
 		  var menu = $('#menu-botones');
@@ -28,7 +27,6 @@
 		  });
 		});
 	  </script>
-	  <!-- funcion para desplazarse a la seccion indicada -->
 	  <script type="text/javascript">
 	  $(function(){
 
@@ -57,7 +55,6 @@
 
 	  });
 	  </script> 
-	  <!-- Funcion para desplegar submenu -->
 	  <script type="text/javascript">
 	  	function muestra_oculta(id) 
 	  	{
@@ -71,44 +68,93 @@
    			muestra_oculta('submenu');
 		}
 	  </script>
-	  <!-- Funcion para cambiar hash de servicios -->
+<!--
+	  <script type="text/javascript">
+	  $(document).ready(function() {
+		  var menu = $('#submenu');
+		  var contenedor = $('#menu-header-smart');
+		  var cont_offset = contenedor.offset();
+		  // Cada vez que se haga scroll en la página
+		  // haremos un chequeo del estado del menú
+		  // y lo vamos a alternar entre 'fixed' y 'static'.
+
+		  $(window).on('scroll', function() {
+		  	 //alert($(window).scrollTop());
+		    if($(window).scrollTop() > cont_offset.top) {
+		      menu.addClass('menu-fijo');
+		    } else {
+		      menu.removeClass('menu-fijo');
+		    }
+		  });
+		});
+	  </script>
+	  <script type="text/javascript">
+	  $(function(){
+
+     	$('a[href*=#]').click(function() {
+
+     		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         		&& location.hostname == this.hostname) {
+
+             		var $target = $(this.hash);
+
+             		$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+             		if ($target.length) {
+
+                 		var targetOffset = $target.offset().top;
+
+                 		$('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                 		return false;
+
+            		}
+
+       			}
+
+   		});
+
+	  });
+	  </script> -->
 </head>
 <body>
 	<header>
 		<nav id="menu-header">
 			<ul id="menu-botones">
 				<li class="boton-pp1">
-					PI.PLUS.ONE
+					<a href="http://www.piplusone.mx">PI.PLUS.ONE</a>
 				</li>
 				<li class="boton-derecha">
-					<a href="#conoce-mas">INNOVACIÓN</a>
+					<a class="contacto-link" href="#contacto">INNOVACIÓN</a>
 				</li>
 				<li>
-					<a class="liga-servicios-low-res" href="#servicios-low-res">SERVICIOS</a>
-					<a class="liga-servicios-1024" href="#servicios-1024">SERVICIOS</a>
+					<a class="boton-servicios" href="#servicios">SERVICIOS</a>
 				</li>
 				<li>
-					<a href="index.html">HOME</a>
+					<a href="#quienes-somos">LAB.</a>
+				</li>
+				<li>
+					<a href="#intro">ACERCA DE</a>
 				</li>
 			</ul>
 		</nav>
 		
 		<nav id="menu-header-smart">
-			<p class="boton-pp1">
-				PI.PLUS.ONE
-			</p>
 			<a class="icon-list" onclick="muestra_oculta('submenu')" href="#"></a>
-			<ul id="submenu">
-				<li>
-					<a href="index.html" onclick="muestra_oculta('submenu')">HOME</a>
-				</li>
-				<li>
-					<a href="#servicios-low-res" onclick="muestra_oculta('submenu')">SERVICIOS</a>
-				</li>
-				<li class="boton-derecha">
-					<a href="#conoce-mas" onclick="muestra_oculta('submenu')">INNOVACIÓN</a>
-				</li>
-			</ul> 
+					<ul id="submenu">
+						<li class="boton-pp1">
+							<a href="http://www.piplusone.mx">PI.PLUS.ONE</a>
+						</li>
+						<li>
+							<a href="#quienes-somos" onclick="muestra_oculta('submenu')">ACERCA DE</a>
+						</li>
+						<li>
+							<a class="boton-servicios" href="#servicios" onclick="muestra_oculta('submenu')">LAB.</a>
+						</li>
+						<li class="boton-derecha">
+							<a href="#contacto" onclick="muestra_oculta('submenu')">INNOVACIÓN</a>
+						</li>
+					</ul> 
 		</nav>
 	</header>
 <!-- *********************************************************** -->
@@ -122,7 +168,7 @@
 			<p class="texto">THINKERS, MAKERS Y ENTREPRENEURS CREANDO SOLUCIONES</p>
 			<p class="texto">A PROBLEMÁTICAS REALES A TRAVÉS DE LA INNOVACIÓN, LA TECNOLOGÍA Y LA CREATIVIDAD.</p>
 			<div class="seguir-box">
-				<a href="html/the-maker-movement.html">BIENVENIDO AL MAKER MOVEMENT</a>
+				<a href="#">BIENVENIDO AL MAKER MOVEMENT</a>
 			</div> 
 		</div>
 	</section>
@@ -159,53 +205,93 @@
 			</div> -->
 		</div>
 	</section>
-<!-- *********************************************************** -->
-<section id="servicios-low-res">
-	<h1>SERVICIOS</h1>
-	<div class="botones-container">
-		<a href="html/futuristic-scenarios.html">
-			<figure class="botones-fig">
-						<img class="botones-img" src="img-v1/futuristic.jpg"></img>
-			</figure>
-		</a>
-		<a href="html/maker-movement.html">
-			<figure class="botones-fig">
-						<img class="botones-img" src="img-v1/maker.jpg"></img>
-			</figure>
-		</a>
-		<a href="html/inhouse-platform.html">
-			<figure class="botones-fig">
-						<img class="botones-img" src="img-v1/inhouse.jpg"></img>
-			</figure>
-		</a>
-		<a href="html/trend-benchmarking.html">
-			<figure class="botones-fig">
-						<img class="botones-img" src="img-v1/trend.jpg"></img>
-			</figure>
-		</a>
-	</div>
-</section>
 
+<!-- *********************************************************** -->
+	<section id="servicios">
+		<h1>SERVICIOS</h1>
+		<div class="servicios-container">
+			<div class="servicios-container-boxes">
+				<div class="servicio-box-item">
+					<div class="icono-item">
+						<figure>
+							<img class="imagen-item" src="img/SERVICIOS_1_320.jpg"></img>
+						</figure>
+					</div>
+					<div class="titulo-item">
+						FUTURISTIC SCENARIOS
+					</div>
+					<div class="texto-item">
+						<p class="parrafo">
+							Contamos historias del futuro y como las marcas encajan en ellas.
+						</p>
+					</div>
+				</div>
+				<div class="servicio-box-item">
+					<div class="icono-item">
+						<figure>
+							<img class="imagen-item" src="img/SERVICIOS_2_320.jpg"></img>
+						</figure>
+					</div>
+					<div class="titulo-item">
+						MAKER MOVEMENT
+					</div>
+					<div class="texto-item">
+						<p class="parrafo">
+							Te acercamos a una red de "thinkers", "makers" y "entrepreneurs", cada uno con experiencias y conocimientos tangibles en temas de Innovación y tecnología aplicables para tu empresa.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="servicios-container-boxes">
+				<div class="servicio-box-item">
+					<div class="icono-item">
+						<figure>
+							<img class="imagen-item" src="img/SERVICIOS_3_320.jpg"></img>
+						</figure>
+					</div>
+					<div class="titulo-item">
+						IN-HOUSE PLATFORM
+					</div>
+					<div class="texto-item">
+						<p class="parrafo">
+							Desarrollamos plataformas on/off line que generan soluciones a problemáticas sociales de alto impacto a través de la tecnología, la creatividad y la innovación, conoce como tu marca puede interactuar con nuevas plataformas.
+						</p>
+					</div>
+				</div>
+				<div class="servicio-box-item">
+					<div class="icono-item">
+						<figure>
+							<img class="imagen-item" src="img/SERVICIOS_4	_320.jpg"></img>
+						</figure>
+					</div>
+					<div class="titulo-item">
+						TREND & BENCHMARKING
+					</div>
+					<div class="texto-item">
+						<p class="parrafo">
+							Analizamos el mercado actual contra tendencias emergentes para identificar oportunidades de liderazgo para tu marca.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 <!-- *********************************************************** -->
 	<section id="servicios-1024">
 		<div class="container">
-			<a class="futuristic-img" href="html/futuristic-scenarios.html">
-			</a>
-			<a href="html/maker-movement.html">
-				<figure class="makermovement-img">
-						<img src="img-v1/makermovement_desactivado.jpg"></img>
-				</figure>
-			</a>
-			<a href="html/inhouse-platform.html">
-				<figure class="inhouse-img">
-						<img src="img-v1/inhouse_desactivado.jpg"></img>
-				</figure>
-			</a>
-			<a href="html/trend-benchmarking.html">
-				<figure class="trend-img">
-						<img src="img-v1/trend_desactivado.jpg"></img>
-				</figure>
-			</a>
+			<figure class="futuristic-img">
+					<img src="img-v1/futuristic_desactivado.jpg"></img>
+			</figure>
+			<figure class="makermovement-img">
+					<img src="img-v1/makermovement_desactivado.jpg"></img>
+			</figure>
+			<figure class="inhouse-img">
+					<img src="img-v1/inhouse_desactivado.jpg"></img>
+			</figure>
+			<figure class="trend-img">
+					<img src="img-v1/trend_desactivado.jpg"></img>
+			</figure>
+
 			<div class="container-fondo">
 
 				<div class="fondo">
@@ -253,46 +339,43 @@
 			<div class="temas-container">
 				
 					<div class="tema-circulo-item">
-						<a href="html/impresion-3d.html">
-							<figure>
-								<img class="tema-circulo-img-item1" src="img-v1/3dprinting.jpg"></img>
-							</figure>
-						</a>
+						<figure>
+							<img class="tema-circulo-img-item1" src="img-v1/3dprinting.jpg"></img>
+						</figure>
+
 					</div>
+
+				
 					<div class="tema-circulo-item">
-						<a href="html/tecnologia-portable.html">
-							<figure>
-								<img class="tema-circulo-img-item2" src="img-v1/wearable.jpg"></img>
-							</figure>
-						</a>
+						<figure>
+							<img class="tema-circulo-img-item2" src="img-v1/wearable.jpg"></img>
+						</figure>
+
 					</div>
 			
 			</div>
 			<div class="temas-container">
 				
 					<div class="tema-circulo-item">
-						<a href="html/internet.html">
-							<figure>
-								<img class="tema-circulo-img-item3" src="img-v1/internetcosas.jpg"></img>
-							</figure>
-						</a>
+						<figure>
+							<img class="tema-circulo-img-item3" src="img-v1/internetcosas.jpg"></img>
+						</figure>
+
 					</div>
+
 					<div class="tema-circulo-item">
-						<a href="html/economia-colaborativa.html">
-							<figure>
-								<img class="tema-circulo-img-item4" src="img-v1/economia.jpg"></img>
-							</figure>
-						</a>
+						<figure>
+							<img class="tema-circulo-img-item4" src="img-v1/economia.jpg"></img>
+						</figure>
 					</div>
 			</div>
 			<div class="temas-container">
 				
 					<div class="tema-circulo-item">
-						<a href="html/drones-industrias.html">
-							<figure>
-								<img class="tema-circulo-img-item5" src="img-v1/drones.jpg"></img>
-							</figure>
-						</a>
+						<figure>
+							<img class="tema-circulo-img-item5" src="img-v1/drones.jpg"></img>
+						</figure>
+
 					</div>
 <!--
 					<div class="tema-circulo-item">
@@ -328,7 +411,7 @@
 			<div class="persona-item">
 				<div class="persona-foto-item">
 					<figure>
-						<img class="img-item" src="img/alfil_100x100.png"></img>
+						<img class="img-item" src="img/Alfil_100x100.png"></img>
 					</figure>
 				</div> 
 				<div class="persona-puesto-item">
@@ -358,7 +441,7 @@
 	<section id="contacto">
 		<div class="contacto-container">
 			<div class="contacto-icono-box">
-				<a class="icon-uniE600" href="mailto:contacto@piplusone.mx?Subject=Contacto PiPlusOne%20again" target="_top"></a>
+				<a class="icon-uniE600" href="mailto:contacto@pp1.mx?Subject=Contacto PiPlusOne%20again" target="_top"></a>
 			</div>
 			<!--
 			<div class="contacto-box">

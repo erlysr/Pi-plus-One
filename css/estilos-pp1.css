@@ -156,29 +156,29 @@ body
 {
     background: black;
     color: white;
-
-    padding: .2em;
-
     overflow: hidden;
     width: 100%;
-    height: 30px;
+
 }
-#menu-header-smart .boton-pp1
+#menu-botones-smart
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+#menu-botones-smart .boton-pp1
 {
     font-family: 'verlagbold';
     font-size: 1.2em;
-    position: absolute;
-    top: .4em;
-    left: 30px;
-    z-index: 3;
+    padding-top: .4em;
+    padding-left: 30px;
+    float: left;
 }
-#menu-header-smart .icon-list
+#menu-botones-smart .icon-list
 {
     font-size: 2em;
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    z-index: 3;
+    padding-top: 5px;
+    padding-right: 30px;
+    float: right;
 }
 #submenu
 {
@@ -187,7 +187,7 @@ body
     padding-left: 20px;
     
     display: none;
-    position: absolute;
+    position: fixed;
     top: 30px;
     right: 0px;
     z-index: 3;
@@ -202,6 +202,15 @@ body
     z-index: 1;
     background: black;
     width: 620px;
+}
+.menu-fijo-smart {
+    position: fixed;
+    top: 0;
+    padding: .2em;
+    left: 0;
+    z-index: 1;
+    background: black;
+    width: 100%;
 }
 h1
 {

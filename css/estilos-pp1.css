@@ -389,11 +389,11 @@ h3
     height: 127px;
     background-image: url('../img-v1/futuristic_hover.jpg');
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: top left;
 }
 #servicios-1024 .container .futuristic-img:hover
 {
-        background-position: top right;
+        background-position: bottom right;
 }
 #servicios-1024 .container .makermovement-img
 {
@@ -401,10 +401,16 @@ h3
     z-index: 1;
     right: 0;
     top: 198px;
+    display: block;
+    width: 933px;
+    height: 127px;
+    background-image: url('../img-v1/maker_hover.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 #servicios-1024 .container .makermovement-img:hover
 {
-    content:url("../img-v1/makermovement_activado.jpg");
+    background-position: bottom right;
 }
 #servicios-1024 .container .inhouse-img
 {
@@ -412,10 +418,16 @@ h3
     z-index: 1;
     left: 0;
     top: 336px;
+    display: block;
+    width: 933px;
+    height: 127px;
+    background-image: url('../img-v1/inhouse_hover.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 #servicios-1024 .container .inhouse-img:hover
 {
-    content:url("../img-v1/inhouse_activado.jpg");
+    background-position: bottom right;
 }
 #servicios-1024 .container .trend-img
 {
@@ -423,10 +435,16 @@ h3
     z-index: 1;
     right: 0;
     top: 475px;
+    display: block;
+    width: 933px;
+    height: 127px;
+    background-image: url('../img-v1/trend_hover.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 #servicios-1024 .container .trend-img:hover
 {
-    content:url("../img-v1/trend_activado.jpg");
+    background-position: bottom right;
 }
 #servicios-1024 .container .container-fondo
 {
@@ -557,59 +575,70 @@ h3
 }
 
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1
-{
-    border-radius: 50%;
+{  
     width: 100px;
-    -webkit-transition: .5s;
+    height: 100px;
+    display: block;
+    background-image: url('../img-v1/impresion_3D_hover.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2
 {
-    border-radius: 50%;
     width: 100px;
-    -webkit-transition: .5s;
+    height: 100px;
+    display: block;
+    background-image: url('../img-v1/tecnologia_portable_hover.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3
 {
-    border-radius: 50%;
     width: 100px;
-    -webkit-transition: .5s;
+    height: 100px;
+    display: block;
+    background-image: url('../img-v1/internet_cosas_hover.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4
 {
-    
-    border-radius: 50%;
-    -webkit-transition: .5s;
-    
     width: 100px;
+    height: 100px;
+    display: block;
+    background-image: url('../img-v1/economia_colab_hover.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item5
 {
-    
-    border-radius: 50%;
-    -webkit-transition: .5s;
-    
     width: 100px;
+    height: 100px;
+    display: block;
+    background-image: url('../img-v1/drones_hover.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
     display: none;
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1:hover
 {
-    content:url("../img-v1/impresion3d_activo.jpg");
+    background-position: bottom right;
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2:hover
 {
-    content:url("../img-v1/wearable_activo.jpg");
+    background-position: bottom right;
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3:hover
 {
-    content:url("../img-v1/internetcosas_activo.jpg");
+    background-position: bottom right;
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4:hover
 {
-    content:url("../img-v1/economia_activo.jpg");
+    background-position: bottom right;
 }
 #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item5:hover
 {
-    content:url("../img-v1/drones_activo.jpg");
+    background-position: bottom right;
 }
 /* ------------------------------------------------------- */
 
@@ -889,22 +918,33 @@ h3
     #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item1
     {
         width: 120px;
+        height: 120px;
+        background-image: url('../img-v1/impresion_3D_hover_120.jpg');
         
     }
     #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item2
     {
         width: 120px;
-        
+        height: 120px;
+        background-image: url('../img-v1/tecnologia_portable_hover_120.jpg');
     }
     #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item3
     {
         width: 120px;
-        
+        height: 120px;
+        background-image: url('../img-v1/internet_cosas_hover_120.jpg');
     }
     #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item4
     {
         width: 120px;
-        
+        height: 120px;
+        background-image: url('../img-v1/economia_colab_hover_120.jpg');
+    }
+    #conoce-mas .conoce-mas-container .temas-container .tema-circulo-item .tema-circulo-img-item5
+    {
+        width: 120px;
+        height: 120px;
+        background-image: url('../img-v1/drones_hover_120.jpg');
     }
     #nuestro-equipo .equipo-container .persona-item .persona-desc-item
     {

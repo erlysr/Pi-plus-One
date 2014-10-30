@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/estilos-servicios.css">
 	<link rel="stylesheet" type="text/css" href="../css/estilos-pp1.css">
-	<script type="text/javascript" src="css/jquery.js"></script>
+	<script type="text/javascript" src="../css/jquery.js"></script>
 	<script type="text/javascript">
 	  $(document).ready(function() {
 		  var menu = $('#menu-botones');
@@ -49,30 +49,41 @@
 	<header>
 		<nav id="menu-header">
 			<ul id="menu-botones">
+				<li class="boton-pp1">
+					PI.PLUS.ONE
+				</li>
 				<li class="boton-derecha">
 					<a href="../index.html#conoce-mas">INNOVACIÓN</a>
 				</li>
 				<li>
 					<a href="../index.html#servicios-1024">SERVICIOS</a>
-				</li>				<li>
+				</li>				
+				<li>
 					<a href="../index.html">HOME</a>
 				</li>
 			</ul>
 		</nav>
 		
 		<nav id="menu-header-smart">
-			<a class="icon-list" onclick="muestra_oculta('submenu')" href="#"></a>
-					<ul id="submenu">
-						<li>
-							<a href="../index.html" onclick="muestra_oculta('submenu')">HOME</a>
-						</li>
-						<li>
-							<a href="../index.html#servicios-low-res" onclick="muestra_oculta('submenu')">SERVICIOS</a>
-						</li>
-						<li class="boton-derecha">
-							<a href="../index.html#conoce-mas" onclick="muestra_oculta('submenu')">INNOVACIÓN</a>
-						</li>
-					</ul> 
+			<ul id="menu-botones-smart">
+				<li class="boton-pp1">
+					PI.PLUS.ONE
+				</li>
+				<li>
+					<a class="icon-list" onclick="muestra_oculta('submenu')"></a>
+				</li>
+			</ul>
+			<ul id="submenu">
+				<li>
+					<a href="../index.html" onclick="muestra_oculta('submenu')">HOME</a>
+				</li>
+				<li>
+					<a href="../index.html#servicios-low-res" onclick="muestra_oculta('submenu')">SERVICIOS</a>
+				</li>
+				<li class="boton-derecha">
+					<a href="../index.html#conoce-mas" onclick="muestra_oculta('submenu')">INNOVACIÓN</a>
+				</li>
+			</ul> 
 		</nav>
 	</header>
 <!-- *********************************************************** -->
@@ -111,6 +122,23 @@
 		<div class="texto-pie">
 			<p>NUESTROS ALIADOS</p>
 		</div>
+		<div class="aliados-logos">
+			<div class="logo-box">
+				<a href="http://www.startupmexico.com/" target="_blank">
+					<figure>
+						<img class="logo-img1" src="../img-v1/servicios/LogoSUM.png"></img>
+					</figure>
+				</a> 
+			</div>
+			<div class="logo-box">
+				<a href="http://www.ilab.net/" target="_blank"> 
+					<figure>
+						<img class="logo-img2" src="../img-v1/servicios/ilab.jpg"></img>
+					</figure>
+				</a>
+			</div>
+		</div>
+
 	</section>
 <!-- *********************************************************** -->
 	<footer>

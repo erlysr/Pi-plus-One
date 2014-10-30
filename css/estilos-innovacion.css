@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'verlagblack';
+    src: url('../fonts/verlag-black-webfont.eot');
+    src: url('../fonts/verlag-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/verlag-black-webfont.woff') format('woff'),
+         url('../fonts/verlag-black-webfont.ttf') format('truetype'),
+         url('../fonts/verlag-black-webfont.svg#verlagblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'verlagbold';
+    src: url('../fonts/verlag-bold-webfont.eot');
+    src: url('../fonts/verlag-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/verlag-bold-webfont.woff') format('woff'),
+         url('../fonts/verlag-bold-webfont.ttf') format('truetype'),
+         url('../fonts/verlag-bold-webfont.svg#verlagbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'verlagbook';
+    src: url('../fonts/verlag-book-webfont.eot');
+    src: url('../fonts/verlag-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/verlag-book-webfont.woff') format('woff'),
+         url('../fonts/verlag-book-webfont.ttf') format('truetype'),
+         url('../fonts/verlag-book-webfont.svg#verlagbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* diseño de la pagina */
+*
+{  
+    margin: 0;
+}
+a
+{
+    color: #f0f0f0;
+    text-decoration: none;
+}
+figure
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+}
+header
+{
+    background: black;
+}
+#body-innova
+{
+    background: black;
+    font-family: 'verlagbook';
+    font-size: 12px;
+    color: #444444;
+    min-width: 320px;
+}
+
+#contenido
+{
+    background: #f2f4f3;
+    padding-top: 20px;
+} 
+#contenido .contenido-container
+{
+    width: 935px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: white;
+    overflow: hidden;
+}
+#contenido .contenido-container .titulo
+{
+    background: black;
+    width: 400px;
+    font-family: 'verlagblack';
+    font-size: 1.2em;
+    color: white;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+#contenido .contenido-container .ilustra 
+{
+    float: left;
+    padding-top: 20px;
+    background: white;
+}
+#contenido .contenido-container .ilustra .imagen
+{
+    width: 235px;
+}
+#contenido .contenido-container .texto
+{
+    width: 600px;
+    font-family: "verlagbook";
+    font-size: 1.2em;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 90px;
+    color: black;
+    float: left;
+    background: white;
+}
+#contenido .contenido-container .texto .full-text
+{
+    padding-bottom: 20px;
+    clear: both;
+}
+#contenido .contenido-container .texto .full-text-bold
+{
+    font-weight: bold;
+    clear: both;
+}
+#contenido .contenido-container .texto .cita
+{
+    text-align: right;
+    padding-top: 10px;
+    font-size: .8em;
+}
+#contenido .contenido-container .texto .logos-container
+{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+#contenido .contenido-container .texto .logos-container .logo
+{
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+#contenido .contenido-container .texto .logos-container .logo-gde
+{
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+#contenido .contenido-container .texto .logos-container .logo-gde .logo-naranja-img
+{
+    width: 150px;
+    text-align: center;
+}
+#contenido .contenido-container .texto .logos-container .logo .etiqueta
+{
+    text-align: center;
+}
+#contenido .contenido-container .volver-boton
+{
+    clear: both;
+    width: 150px;
+    height: 20px;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 5px;
+    margin: 0 auto;
+    font-size: .9em;
+}
+#contenido .contenido-container .volver-boton .texto-boton
+{
+    color: black;
+}
+#contenido .contenido-container .volver-boton .texto-boton:hover
+{
+    color: #0ad1be;
+}
+#contenido .contenido-container .texto-pie
+{
+    clear: both;
+    color: #a7a7a7;
+    font-family: 'verlagbook';
+    font-size: 1.4em;
+    letter-spacing: .2em;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: white;
+}
+#innovacion
+{
+    overflow: hidden;
+    background: #f2f4f3;
+}
+#innovacion .pleca-fig
+{
+    width: 935px;
+    margin: 0 auto;
+}
+#innovacion .pleca-img
+{
+    width: 935px;
+}
+#innovacion .fondo
+{
+    width: 935px;
+    background: white;
+    margin: 0 auto;
+}
+#innovacion .fondo .innovacion-container
+{
+    overflow: hidden;
+    
+    display: box;
+    box-orient: horizontal;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+
+    width: 550px;
+    margin: 0 auto;
+}
+#innovacion .fondo .innovacion-container > div
+{
+    box-flex: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+}
+
+#innovacion .fondo .innovacion-container .tema-circulo-item
+{
+    padding: 5px;
+    text-align: center;   
+    position: relative;
+
+    width: 130px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#innovacion .fondo .innovacion-container .tema-circulo-item figure
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#innovacion .fondo .innovacion-container .tema-circulo-item .tema-circulo-img-item1
+{  
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-image: url('../img-v1/impresion_3D_hover_120.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+#innovacion .fondo .innovacion-container .tema-circulo-item .tema-circulo-img-item2
+{
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-image: url('../img-v1/tecnologia_portable_hover_120.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+#innovacion .fondo .innovacion-container .tema-circulo-item .tema-circulo-img-item3
+{
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-image: url('../img-v1/internet_cosas_hover_120.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+#innovacion .fondo .innovacion-container .tema-circulo-item .tema-circulo-img-item4
+{
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-image: url('../img-v1/economia_colab_hover_120.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+#innovacion  .fondo .innovacion-container .tema-circulo-item .tema-circulo-img-item5
+{
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-image: url('../img-v1/drones_hover_120.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+#innovacion .fondo .innovacion-container .tema-circulo-item .tema-circulo-img-item1:hover
+{
+    background-position: bottom right;
+}
+#innovacion .fondo .innovacion-container .tema-circulo-item .tema-circulo-img-item2:hover
+{
+    background-position: bottom right;
+}
+#innovacion .fondo .innovacion-container .tema-circulo-item .tema-circulo-img-item3:hover
+{
+    background-position: bottom right;
+}
+#innovacion .fondo .innovacion-container .tema-circulo-item .tema-circulo-img-item4:hover
+{
+    background-position: bottom right;
+}
+#innovacion .fondo .innovacion-container .tema-circulo-item .tema-circulo-img-item5:hover
+{
+    background-position: bottom right;
+}
+
+footer
+{
+    background: white;
+   
+}
+footer .footer-container
+{
+    clear: both;
+    border-top: 2px dotted #c6c6c6;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer .footer-container .correo-contacto
+{
+    font-size: 1em;
+    color: #c6c6c6;
+
+}
+/* ------------------------------------------------------- */
+@media screen and (min-width: 321px){
+
+}
+@media screen and (min-width: 640px){
+
+}
+@media screen and (min-width: 800px){
+ 
+}
+@media screen and (min-width: 1024px){
+
+}
+@media screen and (min-width: 1278px){
+  
+}

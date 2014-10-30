@@ -136,7 +136,7 @@ body
 #menu-botones li
 {
     display: inline-block;
-    padding: 0 2em 0 0;
+    padding: 0 2em 0 0em;
     float: right;
 }
 #menu-botones .boton-pp1
@@ -198,6 +198,7 @@ body
     position: fixed;
     top: 0;
     padding: .7em;
+    padding-left: 0em;
     left: 0;
     z-index: 1;
     background: black;
@@ -793,7 +794,7 @@ h3
         font-size: 1.8em;
     }
     .menu-fijo {
-        width: 97%;
+        width: 100%;
     }
     #menu-header-smart
     {

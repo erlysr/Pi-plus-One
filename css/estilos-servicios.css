@@ -65,7 +65,7 @@ header
 }
 #body-pag
 {
-    background: black;
+    background: white;
     font-family: 'verlagbook';
     font-size: 12px;
     color: #444444;
@@ -75,12 +75,33 @@ header
 #contenido
 {
  background: white;
-}
+} 
 #contenido .contenido-container
 {
     width: 1035px;
     margin: 0 auto;
     padding-top: 50px;
+}
+#contenido .contenido-container .titulo
+{
+    background: black;
+    width: 400px;
+    font-family: 'verlagblack';
+    font-size: 1.2em;
+    color: white;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+#contenido .contenido-container .ilustra 
+{
+    float: left;
+}
+#contenido .contenido-container .ilustra .imagen
+{
+    width: 235px;
 }
 #contenido .contenido-container .encabezado
 {
@@ -197,10 +218,56 @@ header
     color: #c6c6c6;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
  
 }
-
+#contenido .aliados-logos
+{
+    margin: 0 auto;
+    width: 762px;
+}
+#contenido .aliados-logos .logo-box
+{
+    padding-left: 80px;
+    padding-right: 80px;
+    float: left;
+}
+#contenido .aliados-logos .logo-box .aliados-img1
+{
+    width: 354px;
+    height: 85px;
+    display: block;
+    background-image: url('../img-v1/servicios/logo_SUM.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+#contenido .aliados-logos .logo-box .aliados-img2
+{
+    width: 88px;
+    height: 85px;
+    display: block;
+    background-image: url('../img-v1/servicios/logo_ilab.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+#contenido .aliados-logos .aliados-img1:hover
+{
+    background-position: bottom right;
+}
+#contenido .aliados-logos .aliados-img2:hover
+{
+    background-position: bottom right;
+}
+#contenido .aliados-logos .logo-box .logo-img1
+{
+    width: 354px;
+    height: 85px;
+}
+#contenido .aliados-logos .logo-box .logo-img2
+{
+    width: 88px;
+    height: 85px;
+}
 /********************** PAGINA "THE MAKER EXPERIENCE" *************************/
 #conoce-a
 {
